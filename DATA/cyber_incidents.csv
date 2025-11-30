@@ -1,0 +1,1001 @@
+id,date,incident_type,severity,status,description,reported_by,created_at
+1,5/22/2024,DDoS,critical,investigating,Generated sample incident data,SIEM,9/21/2024
+2,7/25/2022,Malware,low,closed,Generated sample incident data,User Report,6/20/2024
+3,12/1/2024,Ransomware,medium,resolved,Generated sample incident data,SOC Team,5/30/2021
+4,10/13/2021,Data Breach,high,closed,Generated sample incident data,SOC Team,10/2/2022
+5,11/2/2023,Ransomware,high,investigating,Generated sample incident data,Firewall,2/14/2023
+6,12/16/2024,Insider Threat,high,closed,Generated sample incident data,SIEM,2/6/2023
+7,8/30/2020,Malware,low,resolved,Generated sample incident data,SIEM,2/15/2022
+8,5/21/2022,Malware,critical,investigating,Generated sample incident data,Automated Scanner,10/8/2021
+9,7/29/2024,Insider Threat,low,investigating,Generated sample incident data,SIEM,2/2/2021
+10,9/1/2022,Insider Threat,medium,investigating,Generated sample incident data,Automated Scanner,4/24/2023
+11,7/5/2022,Phishing,low,investigating,Generated sample incident data,SOC Team,10/14/2020
+12,3/4/2024,Data Breach,high,resolved,Generated sample incident data,Automated Scanner,6/1/2021
+13,6/30/2022,Insider Threat,critical,open,Generated sample incident data,Firewall,7/29/2021
+14,1/23/2024,Phishing,critical,investigating,Generated sample incident data,User Report,3/27/2024
+15,6/25/2022,Data Breach,medium,open,Generated sample incident data,SOC Team,12/14/2022
+16,2/12/2021,Insider Threat,medium,closed,Generated sample incident data,User Report,2/9/2021
+17,3/18/2020,Phishing,low,investigating,Generated sample incident data,User Report,7/7/2020
+18,5/4/2023,Insider Threat,medium,closed,Generated sample incident data,User Report,6/17/2021
+19,1/7/2023,Ransomware,medium,investigating,Generated sample incident data,User Report,3/28/2024
+20,10/7/2020,Ransomware,medium,open,Generated sample incident data,SIEM,1/1/2020
+21,4/4/2022,DDoS,medium,resolved,Generated sample incident data,User Report,12/22/2023
+22,9/5/2024,Phishing,critical,closed,Generated sample incident data,SIEM,4/20/2022
+23,3/31/2020,Ransomware,low,closed,Generated sample incident data,Automated Scanner,8/26/2021
+24,1/17/2020,Phishing,critical,investigating,Generated sample incident data,SOC Team,10/27/2020
+25,3/29/2022,Insider Threat,low,investigating,Generated sample incident data,Automated Scanner,2/25/2022
+26,10/31/2021,Ransomware,high,resolved,Generated sample incident data,SOC Team,2/25/2022
+27,2/25/2020,Data Breach,critical,closed,Generated sample incident data,Automated Scanner,12/22/2022
+28,1/2/2023,Malware,low,investigating,Generated sample incident data,Automated Scanner,3/10/2024
+29,11/3/2021,Ransomware,high,closed,Generated sample incident data,Firewall,4/15/2021
+30,3/29/2022,Insider Threat,high,resolved,Generated sample incident data,Firewall,6/22/2021
+31,8/2/2022,Data Breach,low,open,Generated sample incident data,User Report,10/22/2021
+32,8/13/2023,DDoS,critical,resolved,Generated sample incident data,Automated Scanner,12/8/2024
+33,11/14/2024,Ransomware,medium,open,Generated sample incident data,SOC Team,7/17/2021
+34,9/23/2021,Malware,low,resolved,Generated sample incident data,User Report,8/14/2020
+35,9/2/2022,Ransomware,medium,resolved,Generated sample incident data,SOC Team,6/26/2021
+36,9/14/2022,Ransomware,low,open,Generated sample incident data,User Report,7/6/2020
+37,3/12/2022,Malware,medium,closed,Generated sample incident data,SIEM,2/7/2023
+38,6/14/2023,Phishing,medium,resolved,Generated sample incident data,User Report,10/5/2024
+39,5/30/2021,Malware,low,open,Generated sample incident data,Automated Scanner,10/6/2020
+40,8/23/2022,Data Breach,medium,open,Generated sample incident data,SIEM,8/14/2020
+41,3/9/2020,Data Breach,critical,resolved,Generated sample incident data,SOC Team,1/4/2024
+42,4/12/2022,Malware,low,resolved,Generated sample incident data,SOC Team,7/28/2021
+43,7/22/2023,Phishing,medium,resolved,Generated sample incident data,SOC Team,3/15/2020
+44,7/20/2020,Data Breach,medium,open,Generated sample incident data,Firewall,9/15/2021
+45,1/1/2020,Phishing,high,resolved,Generated sample incident data,Automated Scanner,4/25/2022
+46,12/12/2023,Phishing,high,investigating,Generated sample incident data,User Report,9/28/2023
+47,2/1/2020,Insider Threat,low,closed,Generated sample incident data,Firewall,6/17/2020
+48,3/17/2022,DDoS,critical,closed,Generated sample incident data,SIEM,10/21/2023
+49,3/20/2021,Malware,high,closed,Generated sample incident data,Automated Scanner,8/9/2021
+50,8/15/2023,Data Breach,low,investigating,Generated sample incident data,User Report,7/26/2024
+51,6/28/2020,DDoS,high,open,Generated sample incident data,SOC Team,5/27/2024
+52,3/22/2022,Phishing,low,open,Generated sample incident data,SOC Team,2/27/2020
+53,6/8/2021,Insider Threat,medium,investigating,Generated sample incident data,SIEM,11/13/2021
+54,4/17/2022,Phishing,high,closed,Generated sample incident data,Automated Scanner,11/26/2024
+55,8/8/2023,Ransomware,critical,closed,Generated sample incident data,User Report,2/1/2021
+56,10/26/2021,Insider Threat,medium,resolved,Generated sample incident data,Firewall,9/20/2023
+57,9/28/2023,Ransomware,high,open,Generated sample incident data,Automated Scanner,2/26/2023
+58,6/14/2020,Data Breach,high,investigating,Generated sample incident data,SOC Team,12/1/2022
+59,7/12/2021,Insider Threat,critical,open,Generated sample incident data,Firewall,6/8/2022
+60,6/28/2022,Phishing,high,resolved,Generated sample incident data,Automated Scanner,7/28/2021
+61,1/4/2023,Data Breach,medium,open,Generated sample incident data,User Report,1/3/2021
+62,9/21/2024,Data Breach,low,closed,Generated sample incident data,SOC Team,10/21/2020
+63,5/30/2021,Malware,medium,open,Generated sample incident data,SIEM,2/19/2020
+64,7/15/2023,Data Breach,low,resolved,Generated sample incident data,SOC Team,4/1/2024
+65,3/29/2022,Data Breach,medium,investigating,Generated sample incident data,Automated Scanner,1/13/2024
+66,12/6/2023,Malware,medium,investigating,Generated sample incident data,Firewall,5/10/2022
+67,9/8/2022,Insider Threat,low,resolved,Generated sample incident data,Firewall,8/4/2023
+68,5/27/2023,Ransomware,low,open,Generated sample incident data,Automated Scanner,4/14/2020
+69,10/4/2022,Data Breach,high,closed,Generated sample incident data,Automated Scanner,9/10/2022
+70,1/1/2025,DDoS,critical,open,Generated sample incident data,Firewall,10/24/2024
+71,7/16/2021,Phishing,low,investigating,Generated sample incident data,Automated Scanner,1/9/2022
+72,10/19/2022,Malware,medium,closed,Generated sample incident data,Firewall,12/3/2022
+73,1/28/2024,Malware,medium,investigating,Generated sample incident data,SOC Team,12/19/2023
+74,9/8/2023,Ransomware,high,investigating,Generated sample incident data,SIEM,8/9/2020
+75,5/13/2023,Data Breach,high,investigating,Generated sample incident data,Automated Scanner,8/23/2021
+76,6/22/2024,Malware,high,closed,Generated sample incident data,User Report,4/16/2022
+77,12/20/2022,Malware,medium,closed,Generated sample incident data,SIEM,11/13/2024
+78,7/28/2020,Phishing,low,open,Generated sample incident data,User Report,4/25/2022
+79,5/2/2023,Data Breach,critical,resolved,Generated sample incident data,Automated Scanner,3/5/2022
+80,3/7/2024,DDoS,critical,open,Generated sample incident data,SOC Team,7/9/2023
+81,3/21/2021,Phishing,low,closed,Generated sample incident data,User Report,8/4/2020
+82,3/3/2021,Ransomware,low,closed,Generated sample incident data,SIEM,5/21/2023
+83,10/8/2023,Phishing,high,resolved,Generated sample incident data,Firewall,9/11/2022
+84,3/17/2023,Insider Threat,critical,investigating,Generated sample incident data,User Report,5/11/2021
+85,5/12/2022,Ransomware,medium,resolved,Generated sample incident data,Firewall,4/20/2023
+86,9/9/2023,Data Breach,medium,closed,Generated sample incident data,SOC Team,8/20/2021
+87,4/16/2023,DDoS,medium,closed,Generated sample incident data,SOC Team,10/10/2021
+88,2/25/2023,Ransomware,high,investigating,Generated sample incident data,Automated Scanner,3/20/2021
+89,10/6/2022,Malware,medium,open,Generated sample incident data,User Report,2/3/2023
+90,1/8/2023,DDoS,high,closed,Generated sample incident data,Automated Scanner,3/9/2021
+91,12/11/2020,Phishing,medium,investigating,Generated sample incident data,SOC Team,8/3/2022
+92,12/19/2021,Ransomware,low,resolved,Generated sample incident data,User Report,9/7/2022
+93,11/11/2024,Data Breach,medium,open,Generated sample incident data,SIEM,4/20/2021
+94,9/10/2021,Malware,medium,closed,Generated sample incident data,Automated Scanner,12/29/2020
+95,7/17/2021,Malware,low,open,Generated sample incident data,Automated Scanner,9/10/2020
+96,3/9/2022,Insider Threat,critical,closed,Generated sample incident data,User Report,4/27/2020
+97,2/15/2021,Phishing,medium,open,Generated sample incident data,User Report,5/14/2022
+98,11/10/2023,Insider Threat,medium,open,Generated sample incident data,SIEM,5/10/2022
+99,4/8/2022,DDoS,medium,investigating,Generated sample incident data,Automated Scanner,10/15/2024
+100,10/19/2024,Ransomware,medium,open,Generated sample incident data,User Report,7/31/2022
+101,3/29/2023,Malware,medium,closed,Generated sample incident data,Firewall,12/16/2020
+102,2/4/2023,DDoS,low,investigating,Generated sample incident data,SIEM,8/16/2024
+103,11/8/2023,Malware,medium,resolved,Generated sample incident data,Automated Scanner,6/21/2022
+104,5/12/2023,Insider Threat,critical,closed,Generated sample incident data,SIEM,7/10/2022
+105,12/15/2020,Data Breach,high,closed,Generated sample incident data,SIEM,12/9/2024
+106,12/30/2021,Phishing,high,open,Generated sample incident data,User Report,4/15/2024
+107,12/14/2021,Data Breach,medium,resolved,Generated sample incident data,User Report,2/19/2021
+108,5/17/2024,Phishing,high,investigating,Generated sample incident data,SOC Team,1/1/2023
+109,8/3/2020,Malware,medium,open,Generated sample incident data,Automated Scanner,6/5/2020
+110,10/23/2023,Insider Threat,critical,investigating,Generated sample incident data,SOC Team,11/20/2020
+111,3/17/2022,Insider Threat,high,closed,Generated sample incident data,Firewall,7/12/2024
+112,9/3/2023,Ransomware,low,closed,Generated sample incident data,SIEM,2/12/2021
+113,8/9/2024,Data Breach,critical,open,Generated sample incident data,Automated Scanner,11/8/2023
+114,10/2/2020,Phishing,critical,investigating,Generated sample incident data,SOC Team,3/7/2022
+115,3/19/2024,Insider Threat,critical,closed,Generated sample incident data,SOC Team,6/26/2021
+116,3/3/2023,Phishing,high,closed,Generated sample incident data,SOC Team,3/3/2020
+117,5/3/2022,Ransomware,medium,open,Generated sample incident data,User Report,6/7/2023
+118,7/7/2021,Data Breach,low,closed,Generated sample incident data,SIEM,9/9/2024
+119,3/19/2021,Malware,critical,investigating,Generated sample incident data,User Report,3/15/2020
+120,1/29/2022,DDoS,high,resolved,Generated sample incident data,SIEM,7/25/2022
+121,5/22/2021,Ransomware,medium,open,Generated sample incident data,SOC Team,6/4/2023
+122,6/29/2022,Malware,medium,investigating,Generated sample incident data,SOC Team,3/30/2020
+123,12/24/2023,Ransomware,low,open,Generated sample incident data,Automated Scanner,7/25/2024
+124,1/20/2023,Malware,low,resolved,Generated sample incident data,SIEM,4/21/2021
+125,6/25/2024,Phishing,medium,resolved,Generated sample incident data,User Report,11/7/2022
+126,5/9/2022,Phishing,critical,investigating,Generated sample incident data,Firewall,1/25/2024
+127,5/22/2020,Malware,low,resolved,Generated sample incident data,User Report,1/9/2023
+128,5/15/2022,Ransomware,low,resolved,Generated sample incident data,User Report,10/11/2020
+129,9/17/2023,Phishing,low,closed,Generated sample incident data,Firewall,11/26/2022
+130,4/30/2021,Data Breach,low,investigating,Generated sample incident data,Firewall,8/20/2023
+131,8/18/2024,Insider Threat,medium,resolved,Generated sample incident data,Automated Scanner,9/17/2023
+132,10/14/2024,Phishing,medium,closed,Generated sample incident data,SOC Team,7/29/2021
+133,1/24/2022,Insider Threat,critical,investigating,Generated sample incident data,Firewall,11/10/2021
+134,3/27/2024,Data Breach,low,investigating,Generated sample incident data,Firewall,11/29/2022
+135,12/30/2022,Insider Threat,medium,resolved,Generated sample incident data,Automated Scanner,5/9/2022
+136,7/30/2024,Insider Threat,medium,investigating,Generated sample incident data,Automated Scanner,10/28/2023
+137,2/5/2021,DDoS,medium,open,Generated sample incident data,SOC Team,8/17/2023
+138,7/22/2021,Malware,low,closed,Generated sample incident data,Firewall,5/17/2024
+139,9/11/2023,Data Breach,medium,resolved,Generated sample incident data,SIEM,8/6/2024
+140,5/3/2024,DDoS,medium,investigating,Generated sample incident data,Automated Scanner,6/1/2024
+141,6/5/2024,DDoS,medium,investigating,Generated sample incident data,Firewall,1/14/2021
+142,4/8/2022,Ransomware,high,resolved,Generated sample incident data,SOC Team,8/16/2023
+143,10/17/2022,Insider Threat,low,closed,Generated sample incident data,SIEM,12/1/2024
+144,8/12/2023,Ransomware,high,investigating,Generated sample incident data,User Report,2/15/2021
+145,4/20/2020,Data Breach,medium,open,Generated sample incident data,SOC Team,8/12/2024
+146,12/24/2024,Insider Threat,medium,open,Generated sample incident data,SOC Team,12/26/2020
+147,2/2/2020,Phishing,low,investigating,Generated sample incident data,Firewall,2/11/2020
+148,4/16/2021,Phishing,low,investigating,Generated sample incident data,Automated Scanner,10/9/2022
+149,8/10/2020,DDoS,low,investigating,Generated sample incident data,SIEM,2/26/2021
+150,11/5/2020,Phishing,low,open,Generated sample incident data,Automated Scanner,4/26/2023
+151,6/30/2020,Data Breach,high,resolved,Generated sample incident data,SIEM,4/7/2024
+152,11/26/2021,Data Breach,medium,resolved,Generated sample incident data,Automated Scanner,2/23/2020
+153,7/3/2022,Data Breach,low,closed,Generated sample incident data,Firewall,5/5/2021
+154,2/9/2023,Insider Threat,low,open,Generated sample incident data,SIEM,11/20/2020
+155,5/29/2023,Malware,low,closed,Generated sample incident data,Firewall,4/24/2022
+156,11/26/2023,Ransomware,medium,resolved,Generated sample incident data,Firewall,9/3/2020
+157,9/2/2020,Data Breach,high,investigating,Generated sample incident data,SIEM,9/28/2022
+158,12/10/2020,DDoS,medium,resolved,Generated sample incident data,Automated Scanner,11/13/2024
+159,7/12/2022,Malware,medium,closed,Generated sample incident data,Automated Scanner,10/28/2022
+160,8/11/2022,Phishing,critical,closed,Generated sample incident data,Automated Scanner,3/17/2022
+161,8/26/2024,Ransomware,medium,open,Generated sample incident data,Automated Scanner,6/9/2022
+162,4/21/2024,Insider Threat,medium,resolved,Generated sample incident data,Automated Scanner,3/17/2024
+163,7/10/2023,Ransomware,low,open,Generated sample incident data,User Report,10/27/2021
+164,11/24/2020,Ransomware,medium,investigating,Generated sample incident data,Automated Scanner,12/18/2021
+165,9/22/2022,DDoS,critical,resolved,Generated sample incident data,User Report,9/19/2023
+166,10/20/2021,Phishing,critical,open,Generated sample incident data,Automated Scanner,6/13/2022
+167,12/16/2021,Insider Threat,low,resolved,Generated sample incident data,User Report,7/16/2022
+168,1/30/2024,Insider Threat,high,open,Generated sample incident data,User Report,11/12/2023
+169,12/3/2020,Data Breach,medium,investigating,Generated sample incident data,Automated Scanner,9/19/2024
+170,3/2/2023,Ransomware,critical,resolved,Generated sample incident data,Automated Scanner,1/14/2022
+171,10/14/2024,Malware,critical,investigating,Generated sample incident data,Automated Scanner,10/29/2023
+172,8/5/2024,Data Breach,critical,investigating,Generated sample incident data,SOC Team,8/20/2023
+173,2/6/2024,Insider Threat,high,open,Generated sample incident data,Firewall,10/9/2023
+174,7/21/2020,DDoS,high,investigating,Generated sample incident data,Firewall,8/14/2020
+175,7/27/2024,DDoS,low,investigating,Generated sample incident data,Automated Scanner,11/14/2021
+176,8/10/2023,Phishing,high,closed,Generated sample incident data,SOC Team,9/25/2024
+177,1/22/2021,Data Breach,low,open,Generated sample incident data,Automated Scanner,12/13/2023
+178,5/17/2022,Insider Threat,high,closed,Generated sample incident data,Automated Scanner,3/3/2020
+179,4/28/2022,Ransomware,medium,open,Generated sample incident data,SOC Team,1/21/2021
+180,6/15/2021,Data Breach,high,open,Generated sample incident data,SIEM,6/11/2020
+181,7/22/2020,Data Breach,high,closed,Generated sample incident data,Firewall,5/20/2022
+182,9/5/2024,Phishing,high,open,Generated sample incident data,SOC Team,4/15/2022
+183,10/10/2021,Ransomware,high,closed,Generated sample incident data,SIEM,9/11/2024
+184,5/15/2022,Insider Threat,low,closed,Generated sample incident data,User Report,5/16/2021
+185,7/15/2020,Data Breach,medium,open,Generated sample incident data,SIEM,11/20/2021
+186,12/19/2020,DDoS,medium,resolved,Generated sample incident data,Firewall,6/29/2024
+187,10/31/2020,Phishing,high,resolved,Generated sample incident data,User Report,12/22/2023
+188,2/3/2024,Insider Threat,critical,resolved,Generated sample incident data,SOC Team,8/21/2023
+189,5/7/2022,Malware,medium,investigating,Generated sample incident data,Firewall,7/5/2022
+190,11/25/2024,Insider Threat,medium,resolved,Generated sample incident data,SOC Team,8/6/2024
+191,8/3/2024,Data Breach,critical,investigating,Generated sample incident data,Firewall,12/11/2020
+192,5/16/2022,Ransomware,critical,investigating,Generated sample incident data,Automated Scanner,7/29/2020
+193,9/11/2024,Phishing,high,closed,Generated sample incident data,SOC Team,6/7/2024
+194,12/29/2021,DDoS,high,investigating,Generated sample incident data,SIEM,12/16/2021
+195,4/25/2021,DDoS,medium,investigating,Generated sample incident data,User Report,1/30/2024
+196,8/1/2023,DDoS,high,resolved,Generated sample incident data,SOC Team,2/17/2021
+197,4/4/2023,Phishing,low,closed,Generated sample incident data,SIEM,12/13/2021
+198,7/18/2024,Phishing,medium,investigating,Generated sample incident data,Firewall,11/1/2022
+199,6/17/2022,DDoS,low,closed,Generated sample incident data,Firewall,11/19/2022
+200,1/26/2023,Malware,low,closed,Generated sample incident data,SIEM,11/10/2021
+201,3/14/2022,Insider Threat,critical,resolved,Generated sample incident data,User Report,5/13/2023
+202,1/19/2020,Phishing,low,resolved,Generated sample incident data,Automated Scanner,7/17/2020
+203,6/12/2023,DDoS,high,resolved,Generated sample incident data,Firewall,11/21/2021
+204,4/18/2023,Ransomware,high,resolved,Generated sample incident data,SIEM,4/1/2022
+205,8/11/2023,Insider Threat,high,closed,Generated sample incident data,User Report,8/21/2024
+206,8/12/2022,DDoS,critical,investigating,Generated sample incident data,SOC Team,5/14/2021
+207,1/2/2023,Phishing,medium,open,Generated sample incident data,SIEM,3/2/2020
+208,5/23/2021,Data Breach,critical,open,Generated sample incident data,Firewall,2/6/2021
+209,10/12/2024,Data Breach,medium,closed,Generated sample incident data,SOC Team,8/12/2022
+210,8/16/2020,DDoS,high,investigating,Generated sample incident data,User Report,11/12/2022
+211,6/20/2024,Phishing,critical,open,Generated sample incident data,Firewall,11/8/2021
+212,4/20/2020,DDoS,high,investigating,Generated sample incident data,SOC Team,2/23/2020
+213,1/9/2024,Phishing,high,closed,Generated sample incident data,User Report,4/12/2020
+214,9/25/2024,DDoS,high,investigating,Generated sample incident data,SOC Team,8/4/2021
+215,4/18/2024,Data Breach,high,resolved,Generated sample incident data,Automated Scanner,1/19/2022
+216,11/30/2021,Data Breach,critical,open,Generated sample incident data,User Report,8/30/2024
+217,7/1/2024,Ransomware,low,open,Generated sample incident data,SIEM,2/5/2024
+218,12/24/2024,Ransomware,medium,open,Generated sample incident data,Automated Scanner,7/10/2022
+219,12/29/2022,DDoS,critical,open,Generated sample incident data,SOC Team,12/24/2020
+220,7/10/2023,Insider Threat,high,investigating,Generated sample incident data,Automated Scanner,11/5/2021
+221,9/30/2023,Data Breach,low,resolved,Generated sample incident data,SIEM,6/28/2021
+222,8/1/2023,Ransomware,medium,closed,Generated sample incident data,User Report,7/18/2021
+223,1/19/2020,Data Breach,low,investigating,Generated sample incident data,Firewall,7/14/2024
+224,5/3/2020,Phishing,high,open,Generated sample incident data,User Report,7/1/2021
+225,10/19/2020,DDoS,low,resolved,Generated sample incident data,SOC Team,3/3/2023
+226,10/18/2024,Data Breach,critical,closed,Generated sample incident data,SIEM,5/26/2024
+227,3/5/2020,Insider Threat,low,resolved,Generated sample incident data,Automated Scanner,8/24/2020
+228,3/4/2024,Insider Threat,medium,resolved,Generated sample incident data,Firewall,12/10/2022
+229,4/13/2024,Phishing,critical,open,Generated sample incident data,SIEM,2/6/2020
+230,6/21/2022,Insider Threat,critical,closed,Generated sample incident data,SIEM,4/6/2023
+231,5/4/2020,Data Breach,critical,closed,Generated sample incident data,SOC Team,12/13/2022
+232,10/13/2020,Insider Threat,medium,open,Generated sample incident data,Automated Scanner,11/11/2022
+233,3/5/2021,Phishing,low,open,Generated sample incident data,SIEM,1/1/2021
+234,1/2/2020,Ransomware,critical,closed,Generated sample incident data,SIEM,8/2/2024
+235,5/31/2020,Data Breach,critical,resolved,Generated sample incident data,Firewall,5/20/2022
+236,1/19/2023,Phishing,medium,resolved,Generated sample incident data,SIEM,5/11/2023
+237,3/17/2022,DDoS,critical,open,Generated sample incident data,SOC Team,7/20/2024
+238,11/1/2023,DDoS,medium,investigating,Generated sample incident data,SIEM,1/14/2024
+239,9/8/2021,Data Breach,low,open,Generated sample incident data,User Report,10/26/2022
+240,3/20/2020,Malware,medium,closed,Generated sample incident data,User Report,7/28/2022
+241,6/16/2023,Data Breach,low,investigating,Generated sample incident data,SOC Team,8/31/2022
+242,1/23/2023,Phishing,medium,closed,Generated sample incident data,User Report,12/31/2021
+243,11/13/2022,Data Breach,high,closed,Generated sample incident data,SIEM,9/4/2023
+244,10/29/2024,Malware,critical,investigating,Generated sample incident data,Firewall,7/26/2022
+245,5/25/2020,Phishing,medium,open,Generated sample incident data,SIEM,12/31/2020
+246,6/11/2023,Phishing,critical,investigating,Generated sample incident data,User Report,9/24/2024
+247,6/17/2024,Phishing,low,closed,Generated sample incident data,Automated Scanner,1/10/2022
+248,3/8/2020,Phishing,medium,investigating,Generated sample incident data,Firewall,2/14/2023
+249,5/21/2024,Malware,low,open,Generated sample incident data,SOC Team,4/14/2023
+250,9/19/2020,Ransomware,critical,investigating,Generated sample incident data,User Report,7/11/2020
+251,8/13/2022,Data Breach,medium,investigating,Generated sample incident data,Automated Scanner,4/9/2022
+252,7/20/2020,Phishing,low,open,Generated sample incident data,User Report,5/20/2021
+253,9/5/2022,Data Breach,medium,closed,Generated sample incident data,Automated Scanner,7/14/2023
+254,6/30/2021,Malware,medium,open,Generated sample incident data,Firewall,11/23/2020
+255,7/4/2022,Phishing,critical,resolved,Generated sample incident data,Automated Scanner,9/27/2024
+256,10/23/2022,Data Breach,critical,resolved,Generated sample incident data,User Report,10/13/2024
+257,9/17/2023,Insider Threat,critical,investigating,Generated sample incident data,SOC Team,5/4/2023
+258,5/1/2024,Phishing,high,resolved,Generated sample incident data,SIEM,4/18/2020
+259,9/16/2022,Insider Threat,low,closed,Generated sample incident data,User Report,5/12/2021
+260,3/20/2021,Phishing,high,investigating,Generated sample incident data,Firewall,11/12/2020
+261,4/12/2023,Insider Threat,critical,investigating,Generated sample incident data,SOC Team,8/3/2024
+262,8/22/2020,DDoS,low,investigating,Generated sample incident data,Automated Scanner,9/24/2023
+263,11/30/2023,Ransomware,critical,open,Generated sample incident data,Automated Scanner,6/15/2020
+264,10/12/2023,Malware,critical,open,Generated sample incident data,SIEM,2/5/2024
+265,4/17/2024,Insider Threat,high,closed,Generated sample incident data,SIEM,6/17/2023
+266,9/9/2023,Phishing,high,investigating,Generated sample incident data,SIEM,11/24/2020
+267,3/23/2024,DDoS,high,open,Generated sample incident data,SIEM,9/22/2023
+268,7/15/2023,DDoS,critical,open,Generated sample incident data,Firewall,6/23/2020
+269,6/5/2022,Data Breach,high,resolved,Generated sample incident data,Automated Scanner,10/6/2022
+270,5/15/2020,Ransomware,critical,open,Generated sample incident data,SIEM,4/30/2020
+271,12/11/2024,Phishing,critical,investigating,Generated sample incident data,SIEM,9/5/2020
+272,4/6/2021,Insider Threat,critical,resolved,Generated sample incident data,User Report,3/21/2020
+273,9/28/2024,Insider Threat,critical,investigating,Generated sample incident data,SOC Team,9/8/2022
+274,11/10/2020,DDoS,medium,closed,Generated sample incident data,SIEM,1/22/2021
+275,7/27/2020,Data Breach,low,open,Generated sample incident data,Firewall,2/13/2022
+276,7/15/2023,Data Breach,critical,resolved,Generated sample incident data,Automated Scanner,6/9/2021
+277,11/3/2024,Phishing,medium,open,Generated sample incident data,User Report,9/27/2021
+278,4/25/2022,Malware,high,investigating,Generated sample incident data,User Report,1/18/2024
+279,7/25/2024,Phishing,low,open,Generated sample incident data,Firewall,4/6/2022
+280,11/26/2023,Data Breach,critical,resolved,Generated sample incident data,SIEM,12/9/2023
+281,11/28/2022,Phishing,high,investigating,Generated sample incident data,Firewall,3/9/2020
+282,12/9/2024,Malware,low,resolved,Generated sample incident data,SIEM,1/30/2024
+283,1/2/2021,Insider Threat,critical,closed,Generated sample incident data,User Report,8/3/2022
+284,12/17/2024,Insider Threat,medium,resolved,Generated sample incident data,User Report,4/29/2020
+285,2/21/2020,Malware,medium,resolved,Generated sample incident data,User Report,11/16/2022
+286,1/28/2023,Data Breach,critical,investigating,Generated sample incident data,Automated Scanner,5/12/2023
+287,6/16/2022,Ransomware,low,closed,Generated sample incident data,SOC Team,9/15/2020
+288,7/21/2022,Malware,critical,resolved,Generated sample incident data,SOC Team,4/6/2022
+289,3/15/2020,Data Breach,low,resolved,Generated sample incident data,Automated Scanner,11/2/2022
+290,5/29/2024,Ransomware,high,resolved,Generated sample incident data,User Report,10/25/2024
+291,12/30/2021,Data Breach,medium,open,Generated sample incident data,Firewall,10/21/2021
+292,9/17/2020,Phishing,critical,closed,Generated sample incident data,SIEM,1/5/2024
+293,4/15/2022,Insider Threat,low,open,Generated sample incident data,SIEM,5/4/2023
+294,10/10/2021,Phishing,medium,investigating,Generated sample incident data,SIEM,12/27/2022
+295,3/30/2020,Phishing,high,resolved,Generated sample incident data,SOC Team,5/27/2020
+296,7/27/2024,Phishing,high,closed,Generated sample incident data,Automated Scanner,4/11/2023
+297,7/7/2022,DDoS,high,open,Generated sample incident data,SIEM,4/22/2022
+298,10/9/2021,DDoS,low,resolved,Generated sample incident data,SOC Team,9/8/2024
+299,4/21/2021,Insider Threat,low,resolved,Generated sample incident data,Firewall,1/21/2023
+300,10/19/2021,Phishing,low,investigating,Generated sample incident data,SOC Team,8/12/2024
+301,8/20/2021,Insider Threat,high,open,Generated sample incident data,User Report,6/16/2024
+302,3/11/2021,Ransomware,critical,resolved,Generated sample incident data,SIEM,5/25/2021
+303,9/30/2023,Malware,critical,investigating,Generated sample incident data,User Report,11/8/2022
+304,9/19/2020,Phishing,medium,resolved,Generated sample incident data,SIEM,12/24/2021
+305,4/26/2022,Ransomware,medium,closed,Generated sample incident data,SIEM,10/27/2023
+306,11/4/2024,Phishing,high,closed,Generated sample incident data,SIEM,1/27/2020
+307,4/18/2023,Data Breach,critical,open,Generated sample incident data,SOC Team,12/9/2022
+308,12/10/2021,DDoS,medium,open,Generated sample incident data,SIEM,11/27/2022
+309,9/12/2022,Data Breach,low,closed,Generated sample incident data,Automated Scanner,12/21/2024
+310,12/13/2022,Ransomware,high,resolved,Generated sample incident data,SIEM,1/31/2023
+311,10/13/2020,Ransomware,critical,investigating,Generated sample incident data,SIEM,4/5/2021
+312,7/31/2020,Data Breach,low,open,Generated sample incident data,User Report,4/4/2022
+313,6/15/2023,DDoS,low,resolved,Generated sample incident data,SOC Team,3/11/2020
+314,10/6/2022,Malware,low,investigating,Generated sample incident data,User Report,6/24/2022
+315,7/21/2020,DDoS,medium,investigating,Generated sample incident data,SIEM,7/8/2021
+316,11/27/2020,Insider Threat,low,investigating,Generated sample incident data,SOC Team,7/25/2022
+317,4/26/2024,Phishing,critical,investigating,Generated sample incident data,Firewall,10/25/2020
+318,4/8/2024,Ransomware,high,open,Generated sample incident data,Firewall,7/4/2020
+319,11/20/2022,Ransomware,high,open,Generated sample incident data,SOC Team,10/14/2020
+320,4/3/2024,Malware,low,resolved,Generated sample incident data,Automated Scanner,9/15/2024
+321,3/25/2023,DDoS,high,investigating,Generated sample incident data,User Report,1/6/2020
+322,7/3/2023,Phishing,critical,resolved,Generated sample incident data,SIEM,8/27/2023
+323,6/2/2024,Ransomware,low,resolved,Generated sample incident data,SIEM,11/3/2021
+324,12/1/2020,Phishing,low,resolved,Generated sample incident data,User Report,9/24/2024
+325,1/25/2020,Malware,low,closed,Generated sample incident data,SOC Team,7/8/2022
+326,10/16/2020,DDoS,medium,resolved,Generated sample incident data,Firewall,3/15/2023
+327,9/25/2024,Phishing,critical,closed,Generated sample incident data,Automated Scanner,8/13/2022
+328,1/31/2023,Malware,high,resolved,Generated sample incident data,User Report,10/22/2020
+329,11/17/2020,Data Breach,low,resolved,Generated sample incident data,SOC Team,1/16/2022
+330,8/4/2023,Ransomware,low,open,Generated sample incident data,User Report,4/22/2023
+331,11/16/2023,Phishing,high,closed,Generated sample incident data,SOC Team,4/9/2024
+332,3/25/2020,Phishing,high,open,Generated sample incident data,SIEM,2/25/2020
+333,5/29/2020,Phishing,low,resolved,Generated sample incident data,SOC Team,12/11/2020
+334,2/26/2021,Malware,high,investigating,Generated sample incident data,Automated Scanner,7/30/2022
+335,4/17/2021,Data Breach,critical,open,Generated sample incident data,SIEM,10/27/2022
+336,2/12/2020,DDoS,high,closed,Generated sample incident data,User Report,7/3/2020
+337,10/8/2022,Malware,high,open,Generated sample incident data,Firewall,3/2/2022
+338,3/10/2023,DDoS,medium,closed,Generated sample incident data,SOC Team,1/31/2020
+339,7/26/2021,Malware,medium,investigating,Generated sample incident data,SIEM,7/29/2021
+340,7/20/2022,Phishing,medium,closed,Generated sample incident data,Automated Scanner,9/21/2022
+341,6/13/2023,Data Breach,high,open,Generated sample incident data,User Report,1/13/2022
+342,4/15/2021,Ransomware,high,resolved,Generated sample incident data,SIEM,8/23/2022
+343,10/27/2022,Malware,low,resolved,Generated sample incident data,Firewall,4/13/2021
+344,2/14/2024,Phishing,low,investigating,Generated sample incident data,User Report,7/11/2023
+345,5/6/2024,Ransomware,medium,investigating,Generated sample incident data,SIEM,5/8/2022
+346,4/5/2020,DDoS,critical,open,Generated sample incident data,User Report,2/20/2022
+347,4/9/2022,DDoS,high,open,Generated sample incident data,SOC Team,1/9/2024
+348,7/24/2020,Malware,critical,closed,Generated sample incident data,Automated Scanner,8/10/2022
+349,10/7/2023,DDoS,critical,open,Generated sample incident data,User Report,10/27/2022
+350,2/25/2024,Insider Threat,medium,investigating,Generated sample incident data,SIEM,3/27/2024
+351,2/2/2022,Malware,critical,closed,Generated sample incident data,User Report,6/19/2020
+352,6/5/2021,DDoS,low,investigating,Generated sample incident data,Automated Scanner,10/29/2023
+353,5/17/2023,Malware,medium,resolved,Generated sample incident data,SOC Team,8/30/2024
+354,6/27/2020,Phishing,critical,closed,Generated sample incident data,SOC Team,6/8/2024
+355,1/13/2023,Insider Threat,high,closed,Generated sample incident data,SOC Team,10/14/2024
+356,2/9/2021,DDoS,high,closed,Generated sample incident data,Firewall,12/27/2023
+357,2/24/2021,Malware,high,open,Generated sample incident data,SOC Team,11/2/2024
+358,4/17/2021,DDoS,critical,open,Generated sample incident data,SIEM,10/17/2020
+359,11/30/2024,Data Breach,medium,investigating,Generated sample incident data,SIEM,6/11/2022
+360,7/31/2021,Data Breach,medium,resolved,Generated sample incident data,Automated Scanner,4/19/2024
+361,11/15/2023,Ransomware,critical,closed,Generated sample incident data,Firewall,5/29/2024
+362,3/18/2023,Malware,critical,closed,Generated sample incident data,SIEM,3/26/2021
+363,3/18/2023,DDoS,low,resolved,Generated sample incident data,SIEM,5/7/2021
+364,10/9/2023,Malware,low,open,Generated sample incident data,Automated Scanner,8/22/2021
+365,2/6/2022,Phishing,critical,open,Generated sample incident data,SIEM,6/24/2023
+366,5/10/2022,Ransomware,low,investigating,Generated sample incident data,SOC Team,6/27/2023
+367,6/24/2022,Malware,high,open,Generated sample incident data,User Report,11/3/2021
+368,10/14/2023,Malware,medium,resolved,Generated sample incident data,Firewall,3/30/2021
+369,4/20/2022,Data Breach,high,investigating,Generated sample incident data,User Report,9/21/2024
+370,9/6/2022,Malware,low,investigating,Generated sample incident data,SOC Team,11/30/2024
+371,4/12/2020,Malware,medium,closed,Generated sample incident data,User Report,8/17/2024
+372,10/16/2024,Phishing,high,investigating,Generated sample incident data,User Report,8/17/2024
+373,5/2/2022,Insider Threat,low,closed,Generated sample incident data,Automated Scanner,5/8/2024
+374,9/1/2023,Insider Threat,critical,open,Generated sample incident data,SIEM,2/25/2024
+375,7/7/2024,Phishing,critical,resolved,Generated sample incident data,Firewall,2/2/2021
+376,8/21/2020,Data Breach,high,closed,Generated sample incident data,Firewall,10/15/2022
+377,4/26/2022,Malware,low,open,Generated sample incident data,SIEM,12/22/2024
+378,9/4/2020,Malware,medium,resolved,Generated sample incident data,SIEM,10/16/2020
+379,5/6/2021,Phishing,high,closed,Generated sample incident data,Firewall,2/24/2021
+380,6/1/2022,DDoS,critical,resolved,Generated sample incident data,SOC Team,11/20/2020
+381,6/1/2023,Ransomware,medium,resolved,Generated sample incident data,SIEM,12/5/2021
+382,10/10/2022,Insider Threat,high,closed,Generated sample incident data,Firewall,5/10/2023
+383,4/10/2023,Ransomware,medium,open,Generated sample incident data,Automated Scanner,12/22/2023
+384,9/7/2024,Insider Threat,high,investigating,Generated sample incident data,User Report,8/25/2022
+385,6/2/2024,Malware,high,investigating,Generated sample incident data,SOC Team,12/25/2021
+386,6/4/2023,Insider Threat,low,closed,Generated sample incident data,SIEM,11/4/2020
+387,10/15/2023,DDoS,high,closed,Generated sample incident data,SIEM,7/18/2024
+388,11/14/2020,DDoS,medium,investigating,Generated sample incident data,User Report,3/12/2021
+389,2/26/2022,Insider Threat,low,resolved,Generated sample incident data,Firewall,5/31/2022
+390,3/5/2021,Ransomware,high,resolved,Generated sample incident data,Automated Scanner,2/15/2023
+391,1/28/2020,Malware,low,closed,Generated sample incident data,Firewall,2/3/2023
+392,11/22/2021,Insider Threat,high,closed,Generated sample incident data,Automated Scanner,2/7/2020
+393,7/16/2024,Malware,high,open,Generated sample incident data,User Report,6/7/2022
+394,9/3/2022,Data Breach,medium,closed,Generated sample incident data,Automated Scanner,2/15/2021
+395,5/10/2020,Insider Threat,high,investigating,Generated sample incident data,SIEM,6/30/2021
+396,1/29/2021,Data Breach,low,resolved,Generated sample incident data,SIEM,8/1/2020
+397,11/28/2020,Data Breach,low,resolved,Generated sample incident data,Automated Scanner,11/26/2020
+398,9/22/2023,Malware,medium,closed,Generated sample incident data,SOC Team,2/24/2021
+399,7/27/2023,DDoS,medium,resolved,Generated sample incident data,User Report,11/25/2021
+400,4/25/2020,DDoS,medium,closed,Generated sample incident data,SOC Team,5/30/2023
+401,5/2/2024,Malware,high,investigating,Generated sample incident data,SIEM,2/3/2024
+402,10/3/2023,Ransomware,low,resolved,Generated sample incident data,SOC Team,6/21/2024
+403,1/2/2022,Ransomware,medium,investigating,Generated sample incident data,SOC Team,1/2/2021
+404,3/15/2023,Ransomware,critical,investigating,Generated sample incident data,User Report,4/29/2022
+405,12/4/2021,DDoS,critical,closed,Generated sample incident data,User Report,1/23/2023
+406,6/8/2022,DDoS,critical,resolved,Generated sample incident data,User Report,2/8/2022
+407,9/12/2020,Phishing,medium,closed,Generated sample incident data,SIEM,12/11/2023
+408,8/26/2023,DDoS,low,investigating,Generated sample incident data,User Report,1/12/2024
+409,3/14/2022,Phishing,high,investigating,Generated sample incident data,Firewall,10/26/2024
+410,10/15/2022,Data Breach,medium,open,Generated sample incident data,User Report,6/27/2020
+411,5/19/2023,Data Breach,low,open,Generated sample incident data,Automated Scanner,10/9/2024
+412,1/8/2021,Insider Threat,critical,open,Generated sample incident data,User Report,12/15/2021
+413,12/17/2021,Malware,high,resolved,Generated sample incident data,SOC Team,9/30/2021
+414,6/12/2020,Insider Threat,high,investigating,Generated sample incident data,Automated Scanner,5/17/2023
+415,5/5/2021,Ransomware,critical,resolved,Generated sample incident data,SIEM,11/24/2022
+416,10/2/2020,Ransomware,low,investigating,Generated sample incident data,Firewall,8/5/2024
+417,12/20/2023,DDoS,low,investigating,Generated sample incident data,SIEM,2/27/2024
+418,9/9/2021,DDoS,medium,closed,Generated sample incident data,Firewall,8/29/2021
+419,12/11/2023,DDoS,medium,closed,Generated sample incident data,SIEM,7/24/2020
+420,9/19/2021,Ransomware,medium,closed,Generated sample incident data,Automated Scanner,1/8/2022
+421,7/26/2022,Ransomware,low,open,Generated sample incident data,Firewall,9/20/2022
+422,6/8/2022,Ransomware,critical,investigating,Generated sample incident data,User Report,10/28/2022
+423,5/9/2024,Data Breach,high,resolved,Generated sample incident data,SOC Team,8/30/2022
+424,9/12/2022,Malware,high,resolved,Generated sample incident data,Automated Scanner,10/13/2020
+425,8/12/2024,DDoS,low,investigating,Generated sample incident data,SIEM,12/7/2021
+426,6/13/2020,DDoS,low,investigating,Generated sample incident data,Automated Scanner,1/26/2024
+427,3/21/2024,Malware,critical,investigating,Generated sample incident data,SOC Team,3/8/2024
+428,7/25/2020,Ransomware,low,investigating,Generated sample incident data,SOC Team,3/4/2024
+429,1/8/2023,Malware,low,closed,Generated sample incident data,SIEM,5/16/2023
+430,12/4/2022,Insider Threat,high,investigating,Generated sample incident data,SIEM,1/1/2025
+431,9/19/2022,Ransomware,medium,investigating,Generated sample incident data,SIEM,10/3/2020
+432,8/26/2024,Data Breach,high,closed,Generated sample incident data,User Report,1/26/2022
+433,4/15/2021,Insider Threat,critical,resolved,Generated sample incident data,Automated Scanner,4/5/2023
+434,6/26/2022,DDoS,high,resolved,Generated sample incident data,Firewall,8/16/2020
+435,11/17/2024,Malware,medium,closed,Generated sample incident data,SIEM,7/29/2021
+436,6/17/2021,Ransomware,critical,resolved,Generated sample incident data,Automated Scanner,1/12/2022
+437,5/19/2024,DDoS,medium,closed,Generated sample incident data,SIEM,12/21/2021
+438,5/25/2022,Ransomware,low,investigating,Generated sample incident data,Firewall,5/23/2024
+439,2/11/2020,Data Breach,low,investigating,Generated sample incident data,SOC Team,3/14/2023
+440,9/26/2020,DDoS,low,closed,Generated sample incident data,Automated Scanner,8/4/2024
+441,2/17/2024,Malware,critical,resolved,Generated sample incident data,User Report,3/31/2020
+442,5/31/2021,Insider Threat,high,resolved,Generated sample incident data,SOC Team,8/23/2022
+443,8/20/2023,DDoS,low,resolved,Generated sample incident data,Automated Scanner,10/29/2024
+444,1/2/2020,Insider Threat,high,investigating,Generated sample incident data,User Report,2/28/2024
+445,4/16/2024,Phishing,critical,closed,Generated sample incident data,User Report,12/11/2022
+446,5/22/2023,Phishing,high,resolved,Generated sample incident data,Automated Scanner,3/21/2022
+447,11/7/2022,Phishing,low,closed,Generated sample incident data,SOC Team,4/9/2024
+448,3/19/2024,Malware,low,resolved,Generated sample incident data,SIEM,5/21/2021
+449,3/11/2020,Phishing,high,closed,Generated sample incident data,SOC Team,4/3/2022
+450,3/15/2022,DDoS,low,resolved,Generated sample incident data,SIEM,9/28/2022
+451,11/2/2024,Malware,low,open,Generated sample incident data,Firewall,3/1/2022
+452,5/30/2020,Data Breach,high,investigating,Generated sample incident data,Firewall,7/18/2023
+453,10/4/2024,Malware,high,closed,Generated sample incident data,Firewall,9/26/2022
+454,10/19/2024,Phishing,high,resolved,Generated sample incident data,Firewall,6/26/2023
+455,10/8/2020,Ransomware,medium,closed,Generated sample incident data,User Report,10/4/2021
+456,8/5/2020,Data Breach,low,resolved,Generated sample incident data,SOC Team,5/16/2021
+457,5/26/2024,Ransomware,low,open,Generated sample incident data,Automated Scanner,10/3/2020
+458,4/27/2020,DDoS,medium,resolved,Generated sample incident data,SIEM,8/2/2024
+459,10/20/2024,Insider Threat,medium,closed,Generated sample incident data,SOC Team,2/9/2023
+460,9/13/2022,Data Breach,low,investigating,Generated sample incident data,SIEM,8/23/2020
+461,1/20/2023,Ransomware,medium,closed,Generated sample incident data,User Report,8/3/2024
+462,6/1/2024,Malware,critical,open,Generated sample incident data,SOC Team,2/17/2024
+463,2/9/2021,Ransomware,critical,open,Generated sample incident data,User Report,9/5/2022
+464,6/12/2021,Data Breach,medium,investigating,Generated sample incident data,SOC Team,4/3/2020
+465,6/3/2024,Insider Threat,medium,resolved,Generated sample incident data,Firewall,7/30/2024
+466,10/1/2023,Malware,high,resolved,Generated sample incident data,Automated Scanner,5/29/2023
+467,5/15/2023,Insider Threat,low,open,Generated sample incident data,User Report,7/18/2020
+468,1/11/2023,DDoS,medium,resolved,Generated sample incident data,Firewall,12/13/2021
+469,2/24/2023,Phishing,high,closed,Generated sample incident data,Automated Scanner,11/12/2021
+470,6/25/2023,Malware,medium,closed,Generated sample incident data,SIEM,9/8/2023
+471,10/15/2020,Data Breach,low,closed,Generated sample incident data,Automated Scanner,12/5/2020
+472,12/23/2022,Malware,critical,closed,Generated sample incident data,SIEM,6/20/2021
+473,2/29/2024,Phishing,low,closed,Generated sample incident data,SIEM,6/14/2023
+474,3/11/2021,Malware,low,investigating,Generated sample incident data,User Report,10/25/2020
+475,8/12/2022,Malware,low,investigating,Generated sample incident data,Firewall,8/22/2024
+476,4/30/2024,Phishing,low,resolved,Generated sample incident data,SIEM,2/17/2021
+477,2/2/2021,Phishing,high,open,Generated sample incident data,Automated Scanner,12/17/2021
+478,7/9/2021,Data Breach,low,open,Generated sample incident data,Firewall,5/18/2024
+479,5/26/2024,Data Breach,low,investigating,Generated sample incident data,Automated Scanner,1/11/2024
+480,8/4/2023,DDoS,critical,closed,Generated sample incident data,SOC Team,5/7/2020
+481,6/20/2020,DDoS,low,open,Generated sample incident data,SOC Team,1/19/2021
+482,8/8/2024,Data Breach,low,resolved,Generated sample incident data,SIEM,3/20/2024
+483,2/14/2020,Insider Threat,low,investigating,Generated sample incident data,User Report,5/17/2021
+484,3/9/2024,Insider Threat,low,resolved,Generated sample incident data,SOC Team,10/15/2020
+485,3/31/2020,Ransomware,medium,investigating,Generated sample incident data,SOC Team,12/17/2023
+486,4/3/2021,Ransomware,high,closed,Generated sample incident data,Firewall,10/11/2024
+487,12/22/2023,Phishing,high,closed,Generated sample incident data,Automated Scanner,9/27/2022
+488,8/15/2022,Malware,medium,closed,Generated sample incident data,Automated Scanner,8/5/2021
+489,8/4/2024,Data Breach,critical,closed,Generated sample incident data,User Report,4/5/2021
+490,9/9/2020,Insider Threat,medium,closed,Generated sample incident data,User Report,7/2/2024
+491,10/26/2022,Ransomware,critical,resolved,Generated sample incident data,SOC Team,10/18/2023
+492,6/27/2023,Phishing,medium,closed,Generated sample incident data,Firewall,11/28/2024
+493,4/13/2024,Malware,medium,resolved,Generated sample incident data,User Report,1/23/2022
+494,4/4/2024,Data Breach,high,investigating,Generated sample incident data,Automated Scanner,10/21/2022
+495,3/12/2023,Data Breach,medium,investigating,Generated sample incident data,SIEM,10/22/2024
+496,8/25/2023,Data Breach,critical,closed,Generated sample incident data,SIEM,10/3/2022
+497,10/11/2023,Ransomware,critical,resolved,Generated sample incident data,Firewall,9/27/2020
+498,4/6/2020,Data Breach,medium,open,Generated sample incident data,User Report,10/1/2020
+499,9/17/2022,Malware,medium,closed,Generated sample incident data,Automated Scanner,3/2/2022
+500,1/10/2024,DDoS,high,closed,Generated sample incident data,SOC Team,1/4/2020
+501,4/12/2020,Ransomware,low,resolved,Generated sample incident data,SOC Team,1/21/2021
+502,12/19/2020,Data Breach,low,open,Generated sample incident data,SIEM,10/30/2021
+503,9/22/2022,Ransomware,critical,investigating,Generated sample incident data,Firewall,4/4/2020
+504,5/6/2022,Phishing,high,investigating,Generated sample incident data,SIEM,12/19/2023
+505,10/31/2022,Malware,critical,investigating,Generated sample incident data,SIEM,6/3/2024
+506,6/23/2021,Phishing,low,investigating,Generated sample incident data,SIEM,5/21/2022
+507,2/1/2023,Data Breach,medium,closed,Generated sample incident data,User Report,12/16/2023
+508,12/9/2020,Ransomware,high,resolved,Generated sample incident data,User Report,6/5/2020
+509,6/28/2021,Ransomware,high,closed,Generated sample incident data,SIEM,9/7/2021
+510,11/10/2020,Data Breach,low,investigating,Generated sample incident data,User Report,8/4/2022
+511,1/19/2024,DDoS,high,closed,Generated sample incident data,Automated Scanner,12/26/2024
+512,6/18/2021,Data Breach,low,open,Generated sample incident data,Firewall,6/18/2024
+513,7/31/2023,Data Breach,low,closed,Generated sample incident data,Automated Scanner,7/30/2021
+514,5/21/2024,DDoS,medium,closed,Generated sample incident data,SIEM,2/22/2022
+515,1/12/2023,Data Breach,critical,closed,Generated sample incident data,SIEM,8/24/2023
+516,10/19/2021,Phishing,high,open,Generated sample incident data,Firewall,4/27/2021
+517,8/2/2021,Malware,low,investigating,Generated sample incident data,User Report,1/21/2023
+518,3/23/2024,Insider Threat,low,investigating,Generated sample incident data,SIEM,6/7/2020
+519,10/16/2021,DDoS,critical,open,Generated sample incident data,Firewall,4/3/2020
+520,9/18/2024,DDoS,medium,closed,Generated sample incident data,Automated Scanner,5/6/2021
+521,10/2/2024,Data Breach,low,open,Generated sample incident data,SOC Team,9/25/2023
+522,11/8/2022,DDoS,high,investigating,Generated sample incident data,Firewall,6/18/2024
+523,2/4/2023,Insider Threat,critical,resolved,Generated sample incident data,Automated Scanner,1/29/2021
+524,10/13/2021,Phishing,low,resolved,Generated sample incident data,SIEM,9/26/2023
+525,8/19/2022,DDoS,critical,closed,Generated sample incident data,User Report,10/6/2020
+526,11/20/2023,Phishing,low,investigating,Generated sample incident data,User Report,8/13/2022
+527,7/27/2021,DDoS,medium,investigating,Generated sample incident data,SOC Team,2/17/2024
+528,11/3/2022,Data Breach,low,investigating,Generated sample incident data,SOC Team,12/4/2024
+529,3/12/2024,Phishing,low,resolved,Generated sample incident data,SOC Team,1/10/2020
+530,10/5/2021,Data Breach,medium,resolved,Generated sample incident data,SOC Team,7/25/2021
+531,7/25/2024,Insider Threat,high,open,Generated sample incident data,Firewall,4/13/2024
+532,4/4/2020,Insider Threat,low,resolved,Generated sample incident data,Automated Scanner,3/4/2023
+533,12/14/2024,Insider Threat,high,closed,Generated sample incident data,SOC Team,8/2/2022
+534,2/20/2020,DDoS,low,closed,Generated sample incident data,User Report,3/14/2024
+535,7/26/2022,Data Breach,medium,open,Generated sample incident data,SIEM,10/22/2024
+536,11/26/2021,Phishing,low,investigating,Generated sample incident data,SOC Team,10/28/2022
+537,11/5/2020,Malware,low,resolved,Generated sample incident data,User Report,2/26/2024
+538,4/3/2024,Insider Threat,critical,closed,Generated sample incident data,SOC Team,10/26/2023
+539,6/14/2022,Malware,high,closed,Generated sample incident data,Automated Scanner,9/9/2023
+540,12/19/2021,Malware,low,closed,Generated sample incident data,SIEM,11/3/2021
+541,2/9/2021,Phishing,critical,investigating,Generated sample incident data,Automated Scanner,9/16/2022
+542,3/12/2021,Data Breach,medium,closed,Generated sample incident data,Firewall,8/2/2022
+543,4/6/2022,Malware,critical,open,Generated sample incident data,Firewall,7/12/2020
+544,8/20/2023,Ransomware,high,resolved,Generated sample incident data,Automated Scanner,12/13/2020
+545,9/19/2022,Insider Threat,high,open,Generated sample incident data,Firewall,4/16/2024
+546,5/26/2020,Malware,medium,resolved,Generated sample incident data,User Report,1/18/2023
+547,5/15/2022,Data Breach,critical,open,Generated sample incident data,Automated Scanner,8/13/2021
+548,12/26/2024,Insider Threat,critical,closed,Generated sample incident data,Firewall,10/8/2023
+549,7/26/2024,Malware,low,closed,Generated sample incident data,User Report,1/3/2020
+550,6/8/2022,Phishing,high,open,Generated sample incident data,User Report,9/27/2024
+551,1/16/2022,Malware,high,investigating,Generated sample incident data,Automated Scanner,7/25/2022
+552,3/11/2024,Insider Threat,low,investigating,Generated sample incident data,SOC Team,1/7/2023
+553,1/22/2021,DDoS,medium,investigating,Generated sample incident data,User Report,10/3/2020
+554,2/28/2021,DDoS,low,closed,Generated sample incident data,User Report,11/4/2021
+555,7/26/2023,DDoS,low,closed,Generated sample incident data,User Report,6/28/2023
+556,6/10/2023,DDoS,critical,investigating,Generated sample incident data,Automated Scanner,11/11/2021
+557,4/19/2020,Malware,high,open,Generated sample incident data,SOC Team,8/30/2023
+558,10/1/2020,DDoS,medium,closed,Generated sample incident data,SIEM,7/25/2021
+559,1/21/2023,Phishing,medium,closed,Generated sample incident data,SIEM,4/12/2022
+560,4/3/2024,Ransomware,medium,closed,Generated sample incident data,Firewall,1/27/2022
+561,1/5/2024,Phishing,critical,investigating,Generated sample incident data,Firewall,5/4/2024
+562,5/27/2021,Phishing,high,open,Generated sample incident data,User Report,5/7/2023
+563,3/31/2022,DDoS,high,resolved,Generated sample incident data,SOC Team,10/11/2024
+564,11/19/2023,Phishing,medium,open,Generated sample incident data,SOC Team,8/14/2024
+565,5/4/2024,Malware,critical,investigating,Generated sample incident data,Automated Scanner,7/13/2021
+566,11/17/2021,DDoS,critical,open,Generated sample incident data,User Report,12/26/2023
+567,10/23/2024,Malware,critical,resolved,Generated sample incident data,Firewall,7/17/2020
+568,8/18/2022,Ransomware,medium,investigating,Generated sample incident data,SIEM,7/11/2020
+569,10/7/2021,Phishing,high,closed,Generated sample incident data,Automated Scanner,1/17/2023
+570,2/10/2024,Malware,medium,closed,Generated sample incident data,User Report,11/5/2022
+571,2/5/2023,Phishing,high,resolved,Generated sample incident data,Firewall,12/21/2022
+572,10/31/2020,Data Breach,low,investigating,Generated sample incident data,User Report,10/11/2023
+573,6/14/2021,Malware,high,resolved,Generated sample incident data,Automated Scanner,11/6/2021
+574,6/9/2020,Phishing,high,closed,Generated sample incident data,SIEM,9/24/2022
+575,9/16/2020,DDoS,low,investigating,Generated sample incident data,Firewall,2/7/2020
+576,8/9/2022,Phishing,critical,closed,Generated sample incident data,SOC Team,7/25/2024
+577,8/5/2020,Malware,critical,resolved,Generated sample incident data,SOC Team,3/5/2023
+578,1/4/2022,Malware,high,resolved,Generated sample incident data,Firewall,5/14/2022
+579,8/24/2022,DDoS,high,resolved,Generated sample incident data,Firewall,7/21/2021
+580,5/7/2024,Phishing,high,investigating,Generated sample incident data,SOC Team,4/13/2020
+581,3/11/2020,Data Breach,medium,open,Generated sample incident data,SOC Team,5/16/2022
+582,10/30/2022,Phishing,low,investigating,Generated sample incident data,SOC Team,12/16/2023
+583,4/6/2022,Insider Threat,critical,resolved,Generated sample incident data,Automated Scanner,7/23/2020
+584,2/9/2020,Insider Threat,low,investigating,Generated sample incident data,Firewall,12/12/2020
+585,10/17/2022,Phishing,high,open,Generated sample incident data,SOC Team,8/27/2022
+586,6/10/2021,Data Breach,critical,open,Generated sample incident data,Automated Scanner,3/25/2024
+587,7/31/2020,Data Breach,low,open,Generated sample incident data,Automated Scanner,2/26/2020
+588,6/20/2024,Ransomware,critical,closed,Generated sample incident data,SIEM,11/11/2021
+589,7/23/2020,Insider Threat,low,closed,Generated sample incident data,SIEM,7/7/2021
+590,1/4/2020,Insider Threat,medium,closed,Generated sample incident data,SOC Team,4/18/2024
+591,1/7/2024,Ransomware,high,open,Generated sample incident data,User Report,3/20/2023
+592,4/5/2024,Ransomware,high,resolved,Generated sample incident data,SIEM,7/15/2020
+593,9/11/2023,Malware,low,closed,Generated sample incident data,Automated Scanner,10/8/2024
+594,10/16/2024,Ransomware,medium,resolved,Generated sample incident data,SIEM,5/13/2021
+595,11/3/2023,Malware,medium,closed,Generated sample incident data,SOC Team,11/14/2023
+596,3/10/2022,Data Breach,high,open,Generated sample incident data,Automated Scanner,7/14/2021
+597,11/14/2024,Ransomware,critical,investigating,Generated sample incident data,User Report,9/1/2024
+598,10/8/2022,Phishing,low,resolved,Generated sample incident data,User Report,7/31/2024
+599,1/13/2024,Insider Threat,critical,closed,Generated sample incident data,Firewall,10/13/2021
+600,3/24/2023,Data Breach,critical,closed,Generated sample incident data,SIEM,2/29/2024
+601,3/16/2021,Data Breach,medium,open,Generated sample incident data,User Report,12/14/2021
+602,6/21/2022,Phishing,medium,closed,Generated sample incident data,SIEM,10/21/2021
+603,6/16/2020,Data Breach,medium,resolved,Generated sample incident data,Automated Scanner,7/3/2023
+604,7/5/2024,Malware,high,investigating,Generated sample incident data,Automated Scanner,4/6/2022
+605,1/10/2020,DDoS,low,investigating,Generated sample incident data,User Report,8/17/2023
+606,8/28/2021,DDoS,critical,investigating,Generated sample incident data,Firewall,8/27/2021
+607,7/11/2024,Ransomware,high,resolved,Generated sample incident data,SOC Team,7/15/2024
+608,7/24/2021,Ransomware,high,resolved,Generated sample incident data,SIEM,9/16/2021
+609,5/29/2024,DDoS,medium,closed,Generated sample incident data,User Report,5/27/2020
+610,4/14/2024,Data Breach,high,investigating,Generated sample incident data,SIEM,12/10/2022
+611,10/12/2023,Malware,high,closed,Generated sample incident data,SIEM,3/1/2024
+612,3/23/2020,Malware,critical,investigating,Generated sample incident data,User Report,11/14/2024
+613,2/2/2020,Phishing,low,resolved,Generated sample incident data,SIEM,5/20/2023
+614,2/10/2023,Malware,low,open,Generated sample incident data,User Report,2/12/2020
+615,2/25/2021,Malware,medium,open,Generated sample incident data,SIEM,7/20/2023
+616,2/27/2023,Insider Threat,critical,resolved,Generated sample incident data,SIEM,5/31/2022
+617,2/20/2020,Data Breach,low,investigating,Generated sample incident data,User Report,11/18/2020
+618,3/20/2020,DDoS,medium,open,Generated sample incident data,SOC Team,5/17/2020
+619,12/18/2022,Ransomware,medium,investigating,Generated sample incident data,SIEM,11/6/2023
+620,9/15/2021,Ransomware,high,investigating,Generated sample incident data,Automated Scanner,7/16/2022
+621,9/17/2020,DDoS,critical,closed,Generated sample incident data,SIEM,12/6/2020
+622,4/11/2023,Malware,low,resolved,Generated sample incident data,SOC Team,1/8/2023
+623,10/15/2023,Insider Threat,high,resolved,Generated sample incident data,Automated Scanner,10/21/2024
+624,6/6/2024,Data Breach,high,investigating,Generated sample incident data,User Report,4/7/2023
+625,8/9/2024,Ransomware,medium,closed,Generated sample incident data,User Report,11/21/2020
+626,12/11/2024,Malware,medium,open,Generated sample incident data,Firewall,3/14/2024
+627,1/4/2022,Insider Threat,medium,open,Generated sample incident data,SIEM,7/15/2022
+628,1/1/2024,Malware,critical,resolved,Generated sample incident data,Automated Scanner,12/11/2020
+629,5/11/2023,Insider Threat,critical,resolved,Generated sample incident data,SOC Team,8/6/2024
+630,9/24/2021,Malware,high,resolved,Generated sample incident data,User Report,10/24/2020
+631,5/25/2020,DDoS,medium,open,Generated sample incident data,User Report,7/1/2024
+632,3/4/2022,Insider Threat,critical,investigating,Generated sample incident data,SOC Team,2/22/2021
+633,1/16/2021,Phishing,high,open,Generated sample incident data,SIEM,3/12/2024
+634,7/27/2024,Data Breach,high,resolved,Generated sample incident data,SOC Team,12/5/2022
+635,10/17/2020,Ransomware,high,resolved,Generated sample incident data,Automated Scanner,6/9/2021
+636,10/2/2023,Ransomware,critical,resolved,Generated sample incident data,SIEM,2/8/2022
+637,5/9/2023,DDoS,critical,open,Generated sample incident data,SOC Team,8/15/2022
+638,3/4/2022,Ransomware,high,investigating,Generated sample incident data,SIEM,6/1/2023
+639,3/30/2023,Phishing,medium,investigating,Generated sample incident data,Firewall,10/15/2023
+640,4/25/2021,Malware,medium,open,Generated sample incident data,User Report,4/29/2023
+641,2/23/2020,Insider Threat,high,closed,Generated sample incident data,User Report,2/12/2024
+642,4/19/2021,Ransomware,low,investigating,Generated sample incident data,Firewall,6/12/2022
+643,11/29/2024,Ransomware,low,resolved,Generated sample incident data,Automated Scanner,8/4/2023
+644,4/18/2021,DDoS,critical,resolved,Generated sample incident data,User Report,6/10/2023
+645,7/26/2022,Malware,critical,investigating,Generated sample incident data,SIEM,1/20/2023
+646,4/21/2024,Malware,critical,resolved,Generated sample incident data,Firewall,11/27/2020
+647,4/1/2024,Malware,low,investigating,Generated sample incident data,SIEM,7/26/2020
+648,5/18/2020,Data Breach,low,open,Generated sample incident data,SIEM,6/19/2022
+649,12/4/2023,Phishing,low,resolved,Generated sample incident data,SIEM,1/31/2024
+650,8/26/2020,DDoS,low,investigating,Generated sample incident data,SIEM,4/14/2021
+651,9/3/2020,DDoS,medium,investigating,Generated sample incident data,Firewall,8/19/2020
+652,10/24/2021,Ransomware,medium,resolved,Generated sample incident data,User Report,9/9/2021
+653,9/7/2021,Phishing,low,investigating,Generated sample incident data,SOC Team,12/21/2021
+654,10/14/2022,Ransomware,medium,investigating,Generated sample incident data,Automated Scanner,5/8/2020
+655,3/22/2021,Data Breach,critical,open,Generated sample incident data,Firewall,4/9/2022
+656,11/13/2023,Malware,critical,closed,Generated sample incident data,User Report,5/13/2020
+657,2/25/2023,Phishing,high,resolved,Generated sample incident data,SIEM,10/3/2022
+658,1/30/2022,Malware,critical,open,Generated sample incident data,Firewall,3/21/2022
+659,7/16/2024,Data Breach,critical,closed,Generated sample incident data,SIEM,11/19/2021
+660,3/28/2022,Malware,critical,open,Generated sample incident data,User Report,1/16/2024
+661,4/21/2020,Phishing,medium,open,Generated sample incident data,SIEM,2/6/2022
+662,9/3/2020,Ransomware,critical,investigating,Generated sample incident data,Automated Scanner,4/18/2023
+663,9/13/2020,Phishing,low,resolved,Generated sample incident data,SOC Team,10/1/2021
+664,1/9/2023,Insider Threat,high,open,Generated sample incident data,SOC Team,6/27/2022
+665,9/3/2020,Phishing,critical,closed,Generated sample incident data,Automated Scanner,4/6/2020
+666,5/13/2022,DDoS,low,resolved,Generated sample incident data,User Report,2/19/2023
+667,5/8/2021,Ransomware,medium,closed,Generated sample incident data,User Report,8/20/2020
+668,5/27/2021,Malware,critical,resolved,Generated sample incident data,SIEM,10/10/2023
+669,2/13/2022,Phishing,low,investigating,Generated sample incident data,Firewall,3/16/2023
+670,1/22/2023,Insider Threat,high,open,Generated sample incident data,SOC Team,11/22/2024
+671,12/28/2020,DDoS,low,closed,Generated sample incident data,Firewall,3/26/2023
+672,1/28/2022,Malware,medium,closed,Generated sample incident data,SIEM,7/24/2021
+673,12/8/2022,Phishing,medium,closed,Generated sample incident data,User Report,4/2/2023
+674,1/22/2021,Data Breach,critical,closed,Generated sample incident data,Firewall,12/12/2024
+675,5/6/2020,Malware,low,investigating,Generated sample incident data,Firewall,7/1/2021
+676,7/17/2022,Malware,low,open,Generated sample incident data,Firewall,1/19/2022
+677,10/3/2022,Malware,high,closed,Generated sample incident data,SIEM,2/6/2022
+678,3/22/2024,Malware,critical,open,Generated sample incident data,User Report,3/16/2020
+679,3/21/2020,Malware,low,resolved,Generated sample incident data,Firewall,4/22/2024
+680,8/3/2023,Ransomware,low,resolved,Generated sample incident data,SIEM,10/14/2022
+681,9/23/2022,Ransomware,critical,closed,Generated sample incident data,User Report,5/3/2020
+682,2/9/2023,Ransomware,critical,closed,Generated sample incident data,User Report,2/15/2021
+683,3/17/2023,Ransomware,low,closed,Generated sample incident data,Firewall,10/4/2023
+684,5/8/2021,Insider Threat,low,open,Generated sample incident data,User Report,3/29/2023
+685,8/4/2020,DDoS,high,closed,Generated sample incident data,Firewall,12/9/2024
+686,7/11/2024,Ransomware,medium,investigating,Generated sample incident data,SIEM,6/9/2020
+687,3/27/2021,Ransomware,critical,resolved,Generated sample incident data,SOC Team,11/2/2020
+688,2/25/2024,DDoS,high,investigating,Generated sample incident data,Firewall,1/28/2022
+689,1/24/2023,DDoS,critical,resolved,Generated sample incident data,SIEM,9/5/2022
+690,1/2/2022,Ransomware,critical,resolved,Generated sample incident data,User Report,12/16/2022
+691,3/15/2023,DDoS,low,open,Generated sample incident data,Firewall,4/15/2023
+692,4/19/2021,Insider Threat,low,open,Generated sample incident data,SIEM,9/23/2024
+693,6/1/2024,Malware,medium,investigating,Generated sample incident data,Automated Scanner,9/15/2023
+694,11/12/2022,Data Breach,low,resolved,Generated sample incident data,User Report,7/18/2023
+695,3/11/2023,Malware,critical,investigating,Generated sample incident data,Firewall,5/9/2024
+696,5/15/2023,Malware,medium,resolved,Generated sample incident data,Automated Scanner,5/2/2021
+697,11/5/2021,Malware,high,resolved,Generated sample incident data,SOC Team,1/23/2020
+698,6/30/2020,Ransomware,critical,resolved,Generated sample incident data,Automated Scanner,1/10/2022
+699,3/10/2021,Malware,low,closed,Generated sample incident data,User Report,5/29/2022
+700,9/8/2020,Ransomware,high,open,Generated sample incident data,Firewall,4/16/2020
+701,3/23/2021,Malware,critical,closed,Generated sample incident data,SOC Team,12/5/2021
+702,4/8/2023,DDoS,critical,resolved,Generated sample incident data,Automated Scanner,10/5/2024
+703,5/12/2022,Ransomware,low,open,Generated sample incident data,SIEM,3/30/2020
+704,9/12/2024,Malware,low,closed,Generated sample incident data,User Report,12/30/2022
+705,6/22/2021,Ransomware,medium,investigating,Generated sample incident data,SIEM,10/11/2023
+706,5/18/2020,Data Breach,medium,resolved,Generated sample incident data,SOC Team,1/16/2024
+707,11/1/2020,DDoS,critical,open,Generated sample incident data,SOC Team,1/5/2024
+708,11/8/2020,Data Breach,medium,open,Generated sample incident data,Automated Scanner,6/5/2023
+709,1/25/2024,Ransomware,critical,investigating,Generated sample incident data,Firewall,6/11/2021
+710,8/5/2023,Data Breach,low,investigating,Generated sample incident data,SIEM,4/24/2023
+711,12/29/2024,DDoS,high,closed,Generated sample incident data,SOC Team,8/23/2021
+712,9/23/2024,Ransomware,medium,investigating,Generated sample incident data,Automated Scanner,11/25/2021
+713,8/5/2023,Ransomware,medium,closed,Generated sample incident data,Firewall,6/26/2024
+714,7/7/2024,Ransomware,low,open,Generated sample incident data,SOC Team,2/24/2023
+715,3/31/2023,DDoS,medium,open,Generated sample incident data,Automated Scanner,12/26/2023
+716,8/7/2021,Ransomware,medium,resolved,Generated sample incident data,SOC Team,1/4/2022
+717,8/17/2024,Data Breach,low,resolved,Generated sample incident data,SIEM,12/15/2022
+718,1/28/2020,Data Breach,high,investigating,Generated sample incident data,SOC Team,7/11/2020
+719,8/19/2020,Malware,high,open,Generated sample incident data,Automated Scanner,11/9/2024
+720,4/2/2021,Insider Threat,high,open,Generated sample incident data,User Report,5/9/2022
+721,8/14/2023,Data Breach,high,closed,Generated sample incident data,SOC Team,5/15/2020
+722,9/8/2020,Phishing,medium,resolved,Generated sample incident data,Firewall,9/12/2020
+723,4/2/2020,Insider Threat,high,investigating,Generated sample incident data,SIEM,9/5/2020
+724,8/13/2020,Phishing,critical,open,Generated sample incident data,SIEM,4/28/2024
+725,6/7/2020,Insider Threat,critical,open,Generated sample incident data,Automated Scanner,5/15/2021
+726,5/10/2024,Phishing,high,open,Generated sample incident data,User Report,10/19/2022
+727,8/23/2024,Ransomware,low,resolved,Generated sample incident data,SOC Team,4/28/2020
+728,10/7/2023,DDoS,medium,investigating,Generated sample incident data,User Report,2/1/2021
+729,7/1/2021,Ransomware,high,investigating,Generated sample incident data,Firewall,11/4/2024
+730,2/4/2023,Malware,medium,investigating,Generated sample incident data,User Report,5/3/2020
+731,7/18/2023,Data Breach,low,open,Generated sample incident data,SIEM,2/27/2022
+732,4/14/2023,Ransomware,low,investigating,Generated sample incident data,SIEM,1/11/2021
+733,3/15/2023,Malware,low,closed,Generated sample incident data,SOC Team,1/12/2022
+734,8/29/2020,DDoS,medium,open,Generated sample incident data,SIEM,9/5/2021
+735,2/3/2022,Data Breach,high,closed,Generated sample incident data,User Report,12/16/2023
+736,4/15/2022,Insider Threat,critical,closed,Generated sample incident data,Firewall,3/19/2022
+737,3/21/2024,Phishing,high,closed,Generated sample incident data,User Report,9/13/2020
+738,5/29/2023,Malware,high,investigating,Generated sample incident data,SIEM,4/1/2023
+739,2/10/2022,Phishing,critical,investigating,Generated sample incident data,Firewall,7/16/2020
+740,5/9/2021,DDoS,low,investigating,Generated sample incident data,Automated Scanner,5/7/2020
+741,11/23/2023,Malware,medium,resolved,Generated sample incident data,SOC Team,8/9/2024
+742,8/18/2020,Insider Threat,medium,closed,Generated sample incident data,SOC Team,5/30/2020
+743,6/2/2023,DDoS,medium,resolved,Generated sample incident data,User Report,4/21/2024
+744,11/11/2023,Data Breach,critical,resolved,Generated sample incident data,Firewall,4/15/2024
+745,9/29/2022,Data Breach,low,closed,Generated sample incident data,User Report,6/29/2022
+746,6/20/2023,Data Breach,low,open,Generated sample incident data,Automated Scanner,9/14/2024
+747,1/13/2020,Phishing,medium,closed,Generated sample incident data,Automated Scanner,4/8/2020
+748,5/2/2020,DDoS,high,open,Generated sample incident data,SIEM,2/15/2022
+749,8/2/2023,DDoS,medium,investigating,Generated sample incident data,SOC Team,10/2/2020
+750,2/17/2023,Data Breach,critical,open,Generated sample incident data,User Report,12/20/2022
+751,8/18/2024,Phishing,medium,open,Generated sample incident data,SIEM,12/22/2020
+752,7/2/2020,Insider Threat,low,closed,Generated sample incident data,Firewall,1/12/2021
+753,6/3/2020,Insider Threat,low,open,Generated sample incident data,SIEM,6/2/2021
+754,1/22/2023,DDoS,medium,closed,Generated sample incident data,Firewall,9/19/2022
+755,4/5/2024,DDoS,high,closed,Generated sample incident data,Firewall,10/7/2023
+756,3/16/2022,Data Breach,critical,closed,Generated sample incident data,Automated Scanner,10/20/2022
+757,6/6/2022,Data Breach,high,open,Generated sample incident data,SOC Team,10/30/2020
+758,6/1/2021,DDoS,critical,resolved,Generated sample incident data,Automated Scanner,1/14/2020
+759,1/7/2020,Phishing,critical,resolved,Generated sample incident data,User Report,6/8/2020
+760,2/15/2020,Insider Threat,medium,investigating,Generated sample incident data,SOC Team,7/2/2020
+761,10/9/2021,Data Breach,low,resolved,Generated sample incident data,SOC Team,5/8/2023
+762,7/19/2022,Ransomware,low,closed,Generated sample incident data,User Report,5/22/2024
+763,1/24/2022,DDoS,critical,open,Generated sample incident data,SIEM,11/18/2021
+764,12/13/2021,Insider Threat,medium,open,Generated sample incident data,Firewall,10/29/2020
+765,2/9/2023,Insider Threat,high,open,Generated sample incident data,SOC Team,10/13/2024
+766,2/13/2024,Data Breach,low,resolved,Generated sample incident data,SOC Team,3/16/2021
+767,12/29/2024,DDoS,low,resolved,Generated sample incident data,Automated Scanner,2/19/2023
+768,10/18/2024,Malware,low,resolved,Generated sample incident data,SOC Team,9/8/2020
+769,5/4/2022,Insider Threat,medium,resolved,Generated sample incident data,Automated Scanner,10/8/2021
+770,8/10/2022,Ransomware,low,closed,Generated sample incident data,Firewall,6/23/2021
+771,3/25/2020,DDoS,high,closed,Generated sample incident data,SIEM,7/6/2020
+772,12/2/2021,Data Breach,critical,open,Generated sample incident data,Firewall,10/10/2020
+773,7/20/2021,Phishing,medium,open,Generated sample incident data,SIEM,3/3/2022
+774,12/18/2022,DDoS,low,closed,Generated sample incident data,User Report,9/5/2023
+775,12/10/2021,Data Breach,medium,closed,Generated sample incident data,User Report,9/24/2021
+776,5/11/2024,Malware,high,open,Generated sample incident data,Automated Scanner,8/1/2024
+777,6/30/2023,Data Breach,low,closed,Generated sample incident data,Firewall,9/20/2020
+778,8/27/2023,Phishing,low,resolved,Generated sample incident data,User Report,11/10/2024
+779,12/25/2022,Phishing,medium,investigating,Generated sample incident data,Firewall,4/27/2023
+780,10/20/2021,Insider Threat,high,open,Generated sample incident data,User Report,1/13/2023
+781,6/29/2021,Insider Threat,low,open,Generated sample incident data,SIEM,12/19/2023
+782,11/17/2020,DDoS,critical,investigating,Generated sample incident data,SIEM,3/28/2023
+783,6/8/2023,Phishing,critical,closed,Generated sample incident data,Automated Scanner,5/28/2021
+784,10/17/2021,Ransomware,medium,resolved,Generated sample incident data,User Report,7/11/2023
+785,4/16/2024,Data Breach,low,investigating,Generated sample incident data,Firewall,7/3/2020
+786,1/28/2023,Malware,high,closed,Generated sample incident data,User Report,8/29/2022
+787,12/2/2024,Phishing,medium,closed,Generated sample incident data,Automated Scanner,12/25/2020
+788,8/7/2024,Malware,low,open,Generated sample incident data,SOC Team,2/9/2022
+789,10/16/2023,Phishing,high,resolved,Generated sample incident data,SIEM,4/18/2022
+790,2/12/2023,DDoS,medium,open,Generated sample incident data,Automated Scanner,5/30/2022
+791,3/5/2020,Malware,high,closed,Generated sample incident data,User Report,1/1/2020
+792,5/20/2023,DDoS,medium,closed,Generated sample incident data,SIEM,7/9/2021
+793,12/3/2023,Ransomware,low,open,Generated sample incident data,Firewall,10/7/2021
+794,1/3/2021,Malware,critical,resolved,Generated sample incident data,SIEM,12/15/2024
+795,7/10/2023,Data Breach,critical,resolved,Generated sample incident data,SIEM,9/19/2024
+796,5/22/2021,Malware,low,open,Generated sample incident data,Firewall,8/25/2021
+797,10/21/2022,Ransomware,medium,closed,Generated sample incident data,Firewall,4/11/2020
+798,2/18/2024,Data Breach,critical,closed,Generated sample incident data,Firewall,4/12/2024
+799,3/24/2023,Data Breach,high,open,Generated sample incident data,SIEM,9/27/2022
+800,6/2/2021,Insider Threat,low,closed,Generated sample incident data,Firewall,5/20/2022
+801,12/5/2021,Ransomware,high,investigating,Generated sample incident data,SOC Team,3/4/2024
+802,7/21/2021,Malware,high,open,Generated sample incident data,Automated Scanner,10/24/2023
+803,4/18/2022,Data Breach,critical,closed,Generated sample incident data,SIEM,10/12/2024
+804,8/18/2022,Malware,high,resolved,Generated sample incident data,User Report,7/8/2023
+805,6/1/2024,DDoS,low,open,Generated sample incident data,SOC Team,2/3/2020
+806,2/13/2022,Ransomware,medium,open,Generated sample incident data,Automated Scanner,5/13/2021
+807,8/23/2024,Insider Threat,medium,resolved,Generated sample incident data,Firewall,1/30/2023
+808,11/12/2020,Data Breach,low,open,Generated sample incident data,SOC Team,6/11/2024
+809,9/16/2020,Data Breach,low,open,Generated sample incident data,Firewall,8/26/2020
+810,10/15/2020,DDoS,critical,closed,Generated sample incident data,Automated Scanner,12/28/2022
+811,11/16/2024,DDoS,high,open,Generated sample incident data,User Report,1/28/2023
+812,2/19/2024,Phishing,low,closed,Generated sample incident data,User Report,5/30/2023
+813,1/4/2021,Data Breach,low,open,Generated sample incident data,User Report,8/21/2021
+814,12/27/2021,Ransomware,critical,resolved,Generated sample incident data,SOC Team,2/20/2020
+815,2/17/2021,Insider Threat,low,investigating,Generated sample incident data,Automated Scanner,4/26/2024
+816,12/15/2022,Insider Threat,high,investigating,Generated sample incident data,Firewall,7/16/2022
+817,11/25/2021,DDoS,critical,investigating,Generated sample incident data,User Report,6/15/2023
+818,5/27/2020,Malware,critical,closed,Generated sample incident data,SIEM,7/8/2022
+819,8/7/2020,Data Breach,critical,closed,Generated sample incident data,Firewall,3/19/2021
+820,12/23/2020,Malware,low,open,Generated sample incident data,SIEM,12/15/2024
+821,2/28/2024,Data Breach,critical,investigating,Generated sample incident data,SOC Team,8/10/2022
+822,3/18/2021,Data Breach,high,closed,Generated sample incident data,Automated Scanner,9/5/2022
+823,9/30/2024,Insider Threat,medium,investigating,Generated sample incident data,SOC Team,8/12/2021
+824,6/26/2021,Phishing,critical,investigating,Generated sample incident data,User Report,11/21/2022
+825,2/28/2021,DDoS,low,closed,Generated sample incident data,Automated Scanner,5/13/2020
+826,5/22/2022,Malware,medium,open,Generated sample incident data,SIEM,2/21/2024
+827,6/22/2022,Insider Threat,low,investigating,Generated sample incident data,Automated Scanner,1/21/2024
+828,6/18/2022,Phishing,critical,closed,Generated sample incident data,User Report,12/21/2020
+829,9/5/2022,Insider Threat,critical,closed,Generated sample incident data,SIEM,2/21/2023
+830,5/14/2020,Phishing,high,resolved,Generated sample incident data,User Report,8/5/2023
+831,3/4/2020,Insider Threat,low,resolved,Generated sample incident data,SOC Team,10/14/2020
+832,12/26/2022,Insider Threat,critical,closed,Generated sample incident data,Firewall,1/31/2023
+833,6/4/2021,Insider Threat,medium,closed,Generated sample incident data,User Report,9/13/2023
+834,3/25/2024,DDoS,medium,investigating,Generated sample incident data,User Report,8/19/2023
+835,1/3/2021,DDoS,high,investigating,Generated sample incident data,Automated Scanner,7/18/2020
+836,5/17/2022,Data Breach,low,closed,Generated sample incident data,Firewall,5/5/2021
+837,3/30/2020,Data Breach,medium,closed,Generated sample incident data,SIEM,8/12/2021
+838,1/10/2024,Phishing,low,investigating,Generated sample incident data,Automated Scanner,10/2/2021
+839,4/2/2021,Insider Threat,critical,resolved,Generated sample incident data,User Report,12/31/2020
+840,6/22/2023,Phishing,low,closed,Generated sample incident data,Firewall,9/22/2021
+841,7/13/2022,Malware,medium,resolved,Generated sample incident data,Firewall,9/24/2023
+842,11/2/2023,Phishing,low,open,Generated sample incident data,SIEM,9/25/2021
+843,11/25/2020,Phishing,medium,open,Generated sample incident data,Firewall,10/16/2021
+844,1/26/2021,Ransomware,high,investigating,Generated sample incident data,Automated Scanner,2/25/2021
+845,8/9/2021,Malware,critical,closed,Generated sample incident data,Firewall,3/16/2023
+846,11/25/2021,Data Breach,medium,resolved,Generated sample incident data,User Report,2/26/2022
+847,9/21/2020,Ransomware,medium,closed,Generated sample incident data,User Report,10/9/2020
+848,12/28/2022,Ransomware,high,resolved,Generated sample incident data,Firewall,10/27/2020
+849,12/11/2020,Data Breach,high,closed,Generated sample incident data,SOC Team,10/11/2023
+850,9/10/2024,Malware,high,closed,Generated sample incident data,Automated Scanner,4/1/2020
+851,5/5/2023,Phishing,low,closed,Generated sample incident data,User Report,4/26/2024
+852,8/20/2021,Insider Threat,low,open,Generated sample incident data,Firewall,12/8/2023
+853,11/29/2022,Phishing,medium,open,Generated sample incident data,Firewall,7/19/2020
+854,5/10/2023,Malware,low,resolved,Generated sample incident data,Firewall,7/1/2020
+855,3/20/2023,Ransomware,low,closed,Generated sample incident data,Automated Scanner,1/4/2020
+856,3/12/2020,DDoS,critical,resolved,Generated sample incident data,SOC Team,10/31/2021
+857,7/2/2023,Data Breach,medium,investigating,Generated sample incident data,Automated Scanner,2/15/2022
+858,1/9/2020,Malware,critical,open,Generated sample incident data,Firewall,12/16/2023
+859,3/12/2024,Phishing,critical,closed,Generated sample incident data,SIEM,10/19/2020
+860,9/1/2020,Malware,high,open,Generated sample incident data,SOC Team,12/5/2022
+861,8/28/2021,Ransomware,high,closed,Generated sample incident data,SOC Team,2/11/2020
+862,12/10/2024,Insider Threat,low,resolved,Generated sample incident data,Automated Scanner,11/15/2023
+863,8/28/2021,Insider Threat,critical,investigating,Generated sample incident data,SIEM,8/19/2020
+864,12/17/2023,Ransomware,low,closed,Generated sample incident data,Automated Scanner,1/4/2021
+865,8/5/2022,Insider Threat,critical,closed,Generated sample incident data,Firewall,9/15/2023
+866,8/5/2024,Ransomware,critical,resolved,Generated sample incident data,SOC Team,5/8/2022
+867,12/6/2022,Ransomware,high,closed,Generated sample incident data,Automated Scanner,12/21/2024
+868,6/19/2023,DDoS,critical,investigating,Generated sample incident data,SIEM,5/25/2020
+869,6/18/2021,Phishing,medium,investigating,Generated sample incident data,SIEM,5/8/2022
+870,11/26/2021,Ransomware,medium,investigating,Generated sample incident data,Firewall,4/23/2022
+871,11/23/2023,Phishing,low,closed,Generated sample incident data,Firewall,1/26/2023
+872,2/3/2022,Phishing,medium,open,Generated sample incident data,SOC Team,2/22/2021
+873,9/4/2021,Phishing,high,resolved,Generated sample incident data,User Report,10/15/2021
+874,9/5/2021,Phishing,medium,open,Generated sample incident data,Firewall,9/12/2021
+875,7/31/2024,Phishing,low,closed,Generated sample incident data,Automated Scanner,4/27/2020
+876,8/22/2021,DDoS,high,resolved,Generated sample incident data,SOC Team,12/16/2023
+877,12/24/2020,Phishing,medium,closed,Generated sample incident data,SIEM,8/24/2020
+878,6/7/2022,Phishing,medium,closed,Generated sample incident data,Automated Scanner,9/10/2024
+879,6/8/2021,Phishing,medium,closed,Generated sample incident data,Firewall,2/5/2022
+880,12/16/2022,Ransomware,critical,closed,Generated sample incident data,User Report,12/16/2023
+881,4/12/2024,Malware,critical,open,Generated sample incident data,SIEM,7/21/2021
+882,5/7/2023,Malware,critical,resolved,Generated sample incident data,Firewall,12/9/2020
+883,12/10/2023,Ransomware,high,closed,Generated sample incident data,SOC Team,6/25/2024
+884,7/24/2024,Insider Threat,critical,resolved,Generated sample incident data,User Report,5/8/2022
+885,6/22/2021,Data Breach,high,investigating,Generated sample incident data,SOC Team,12/30/2021
+886,6/27/2021,DDoS,high,closed,Generated sample incident data,Firewall,6/3/2020
+887,12/5/2021,Insider Threat,low,open,Generated sample incident data,Firewall,5/31/2022
+888,8/11/2024,Malware,medium,closed,Generated sample incident data,SIEM,8/20/2024
+889,6/21/2023,Ransomware,medium,closed,Generated sample incident data,Firewall,1/25/2023
+890,6/13/2022,DDoS,low,resolved,Generated sample incident data,Automated Scanner,5/26/2022
+891,1/28/2021,Insider Threat,low,investigating,Generated sample incident data,SIEM,9/27/2020
+892,1/10/2024,DDoS,low,closed,Generated sample incident data,Firewall,1/28/2024
+893,9/23/2021,DDoS,low,resolved,Generated sample incident data,Firewall,2/13/2021
+894,2/2/2022,DDoS,low,closed,Generated sample incident data,Firewall,3/18/2022
+895,7/17/2023,Malware,critical,resolved,Generated sample incident data,User Report,7/23/2023
+896,12/24/2022,Phishing,medium,closed,Generated sample incident data,SIEM,10/28/2022
+897,1/30/2023,Malware,medium,investigating,Generated sample incident data,SOC Team,11/22/2020
+898,5/9/2020,Ransomware,critical,closed,Generated sample incident data,SOC Team,12/7/2022
+899,7/1/2020,Malware,low,closed,Generated sample incident data,SOC Team,12/30/2024
+900,3/1/2022,Phishing,low,resolved,Generated sample incident data,Firewall,11/10/2022
+901,2/26/2023,Ransomware,low,investigating,Generated sample incident data,SIEM,1/23/2024
+902,4/9/2023,DDoS,low,investigating,Generated sample incident data,SOC Team,11/29/2023
+903,7/5/2022,Ransomware,low,open,Generated sample incident data,Automated Scanner,10/18/2020
+904,12/18/2020,Malware,critical,investigating,Generated sample incident data,Firewall,7/31/2022
+905,2/18/2024,Insider Threat,high,resolved,Generated sample incident data,SOC Team,1/9/2022
+906,11/28/2021,DDoS,critical,investigating,Generated sample incident data,User Report,7/31/2024
+907,10/16/2024,DDoS,high,closed,Generated sample incident data,User Report,10/28/2024
+908,11/20/2024,Phishing,high,resolved,Generated sample incident data,Firewall,10/6/2023
+909,8/1/2021,Data Breach,high,investigating,Generated sample incident data,SOC Team,12/28/2020
+910,12/21/2020,Ransomware,critical,resolved,Generated sample incident data,Firewall,5/19/2021
+911,10/5/2021,Data Breach,high,closed,Generated sample incident data,User Report,4/2/2022
+912,11/7/2024,Insider Threat,high,resolved,Generated sample incident data,User Report,10/2/2020
+913,9/17/2024,Insider Threat,high,investigating,Generated sample incident data,SOC Team,2/1/2020
+914,3/1/2024,Phishing,low,open,Generated sample incident data,Automated Scanner,11/4/2021
+915,7/10/2020,Ransomware,high,open,Generated sample incident data,Firewall,1/22/2024
+916,1/12/2024,Phishing,high,investigating,Generated sample incident data,SIEM,5/2/2023
+917,8/7/2023,Data Breach,medium,closed,Generated sample incident data,SOC Team,4/11/2020
+918,6/16/2022,DDoS,medium,resolved,Generated sample incident data,Firewall,3/7/2022
+919,1/26/2020,Ransomware,medium,closed,Generated sample incident data,Automated Scanner,1/14/2022
+920,12/25/2020,Insider Threat,low,resolved,Generated sample incident data,Firewall,4/14/2020
+921,11/30/2023,Malware,high,resolved,Generated sample incident data,SIEM,2/17/2020
+922,10/13/2024,Data Breach,critical,investigating,Generated sample incident data,SOC Team,5/15/2021
+923,7/7/2021,Data Breach,medium,open,Generated sample incident data,User Report,1/14/2021
+924,8/5/2023,DDoS,high,resolved,Generated sample incident data,User Report,6/8/2021
+925,11/3/2022,Malware,low,open,Generated sample incident data,Firewall,1/27/2020
+926,1/11/2021,Ransomware,medium,open,Generated sample incident data,User Report,9/21/2020
+927,2/24/2020,DDoS,critical,open,Generated sample incident data,Firewall,11/2/2022
+928,9/18/2020,Phishing,low,open,Generated sample incident data,SIEM,9/22/2020
+929,10/1/2021,Insider Threat,high,open,Generated sample incident data,SOC Team,10/1/2023
+930,10/21/2023,DDoS,critical,resolved,Generated sample incident data,Automated Scanner,6/11/2023
+931,9/25/2021,Malware,critical,open,Generated sample incident data,SIEM,7/25/2021
+932,11/21/2022,Ransomware,critical,closed,Generated sample incident data,User Report,2/25/2020
+933,9/9/2020,Ransomware,medium,open,Generated sample incident data,SOC Team,1/13/2022
+934,8/23/2021,Data Breach,medium,resolved,Generated sample incident data,Automated Scanner,12/10/2021
+935,4/20/2024,Malware,low,closed,Generated sample incident data,Automated Scanner,9/19/2020
+936,3/3/2023,Phishing,low,closed,Generated sample incident data,Firewall,10/1/2023
+937,11/27/2021,Phishing,medium,resolved,Generated sample incident data,User Report,10/29/2022
+938,11/6/2023,Phishing,low,resolved,Generated sample incident data,Firewall,4/14/2020
+939,5/2/2024,Ransomware,low,resolved,Generated sample incident data,Firewall,3/9/2023
+940,12/25/2021,Phishing,medium,resolved,Generated sample incident data,SIEM,8/26/2022
+941,4/21/2021,Malware,critical,investigating,Generated sample incident data,User Report,2/22/2022
+942,6/9/2024,Data Breach,high,resolved,Generated sample incident data,User Report,2/15/2022
+943,11/18/2023,Ransomware,high,open,Generated sample incident data,SOC Team,12/24/2024
+944,8/31/2022,DDoS,low,resolved,Generated sample incident data,User Report,5/22/2024
+945,7/21/2020,Ransomware,medium,resolved,Generated sample incident data,Automated Scanner,10/8/2023
+946,9/15/2024,Ransomware,high,closed,Generated sample incident data,Firewall,4/22/2024
+947,1/12/2021,Insider Threat,high,open,Generated sample incident data,User Report,10/16/2021
+948,6/13/2020,Malware,high,closed,Generated sample incident data,SIEM,2/4/2024
+949,7/2/2024,DDoS,medium,resolved,Generated sample incident data,Firewall,5/10/2021
+950,7/3/2021,Ransomware,medium,resolved,Generated sample incident data,User Report,10/27/2024
+951,6/21/2021,Malware,medium,investigating,Generated sample incident data,Firewall,5/25/2023
+952,10/20/2023,DDoS,medium,open,Generated sample incident data,Automated Scanner,12/16/2023
+953,2/10/2020,Phishing,medium,open,Generated sample incident data,SIEM,11/11/2020
+954,7/9/2024,Ransomware,high,resolved,Generated sample incident data,Automated Scanner,6/3/2022
+955,8/19/2020,Data Breach,low,investigating,Generated sample incident data,Automated Scanner,6/24/2023
+956,10/5/2022,Data Breach,medium,resolved,Generated sample incident data,User Report,12/18/2024
+957,9/19/2020,Insider Threat,critical,investigating,Generated sample incident data,Automated Scanner,10/31/2024
+958,1/23/2024,Ransomware,low,closed,Generated sample incident data,Automated Scanner,4/18/2022
+959,12/6/2023,DDoS,high,closed,Generated sample incident data,Automated Scanner,11/27/2020
+960,8/1/2022,Insider Threat,medium,investigating,Generated sample incident data,User Report,1/7/2024
+961,5/1/2022,Insider Threat,low,open,Generated sample incident data,Firewall,10/27/2023
+962,7/16/2023,Insider Threat,low,open,Generated sample incident data,Automated Scanner,6/6/2023
+963,9/3/2022,DDoS,critical,open,Generated sample incident data,User Report,12/2/2020
+964,1/20/2024,Ransomware,low,investigating,Generated sample incident data,User Report,5/26/2024
+965,4/6/2022,Ransomware,critical,resolved,Generated sample incident data,SIEM,5/3/2022
+966,2/8/2020,Insider Threat,low,investigating,Generated sample incident data,Automated Scanner,9/14/2023
+967,9/20/2021,Data Breach,low,open,Generated sample incident data,Automated Scanner,11/7/2022
+968,2/24/2022,Phishing,critical,resolved,Generated sample incident data,Automated Scanner,2/23/2022
+969,2/2/2020,Ransomware,medium,investigating,Generated sample incident data,SIEM,3/16/2020
+970,12/14/2020,Phishing,critical,resolved,Generated sample incident data,User Report,5/26/2021
+971,9/28/2021,Data Breach,high,resolved,Generated sample incident data,User Report,10/17/2023
+972,5/21/2023,Data Breach,low,open,Generated sample incident data,Firewall,4/28/2023
+973,11/10/2023,Phishing,medium,resolved,Generated sample incident data,Firewall,1/13/2023
+974,4/9/2022,Data Breach,critical,open,Generated sample incident data,Automated Scanner,3/27/2020
+975,1/21/2024,Phishing,medium,resolved,Generated sample incident data,Firewall,3/9/2024
+976,3/14/2021,DDoS,medium,investigating,Generated sample incident data,SIEM,9/27/2020
+977,7/19/2021,Malware,medium,open,Generated sample incident data,SOC Team,12/11/2020
+978,3/26/2020,Data Breach,high,closed,Generated sample incident data,User Report,8/17/2023
+979,4/30/2022,Data Breach,medium,investigating,Generated sample incident data,SIEM,8/8/2021
+980,2/13/2022,DDoS,low,investigating,Generated sample incident data,User Report,12/1/2022
+981,10/20/2024,Data Breach,critical,closed,Generated sample incident data,Firewall,6/20/2024
+982,5/18/2020,Malware,low,open,Generated sample incident data,SIEM,11/7/2020
+983,9/5/2020,Insider Threat,critical,closed,Generated sample incident data,Automated Scanner,7/29/2021
+984,5/27/2021,Insider Threat,medium,investigating,Generated sample incident data,SOC Team,10/10/2020
+985,7/12/2022,Insider Threat,medium,resolved,Generated sample incident data,Automated Scanner,1/22/2020
+986,1/5/2024,Insider Threat,critical,open,Generated sample incident data,User Report,8/24/2023
+987,9/18/2020,DDoS,critical,resolved,Generated sample incident data,Automated Scanner,5/1/2022
+988,12/14/2024,Ransomware,low,open,Generated sample incident data,SOC Team,5/20/2020
+989,7/5/2021,Malware,critical,closed,Generated sample incident data,User Report,5/19/2020
+990,2/20/2020,Ransomware,medium,open,Generated sample incident data,Firewall,5/28/2020
+991,11/18/2022,Data Breach,critical,resolved,Generated sample incident data,User Report,7/24/2022
+992,3/29/2022,DDoS,high,open,Generated sample incident data,Firewall,11/18/2020
+993,9/24/2021,Phishing,medium,investigating,Generated sample incident data,SOC Team,5/24/2024
+994,5/6/2023,DDoS,low,investigating,Generated sample incident data,SOC Team,10/15/2023
+995,10/20/2023,DDoS,critical,investigating,Generated sample incident data,SOC Team,7/16/2024
+996,6/17/2024,Data Breach,medium,investigating,Generated sample incident data,User Report,12/31/2021
+997,11/14/2024,DDoS,low,resolved,Generated sample incident data,User Report,5/26/2022
+998,4/19/2023,DDoS,medium,resolved,Generated sample incident data,SOC Team,4/5/2022
+999,4/4/2023,Malware,critical,investigating,Generated sample incident data,SIEM,12/2/2021
+1000,7/23/2021,Phishing,low,investigating,Generated sample incident data,SOC Team,8/4/2022

@@ -1,0 +1,10 @@
+# Python cache, Virtual enviroment, vs code, and logs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env/
+.venv/
+.vscode/
+.idea/
+*.log

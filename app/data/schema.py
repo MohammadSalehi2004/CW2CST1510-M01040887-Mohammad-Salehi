@@ -60,7 +60,7 @@ def create_it_tickets_table(conn):
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS it_tickets (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            ticket_id TEXT UNIQUE,              -- keep it, but allow NULL
+            ticket_id TEXT UNIQUE NOT NULL,
             priority TEXT,
             status TEXT,
             category TEXT,
@@ -74,6 +74,7 @@ def create_it_tickets_table(conn):
     """)
     conn.commit()
     print("[OK] it_tickets table created.")
+
 
 
 def create_all_tables(conn):

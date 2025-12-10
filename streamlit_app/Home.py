@@ -10,7 +10,7 @@ if ROOT_DIR not in sys.path:
 from app.services.user_service import login_user, register_user
 from app.data.db import connect_database
 
-# >>> ADDED: import username & password validators from auth.py
+# adding import username & password validators from auth.py
 from auth import validate_username, validate_password
 
 
@@ -85,20 +85,19 @@ with tab_register:
     role = st.selectbox("Role", ["cyber", "data", "it_ops", "admin"], key="reg_role")
 
     if st.button("Register", key="register_button"):
-        # >>> VALIDATION BLOCK ADDED (required)
         
         # empty field check
         if not reg_user or not reg_pass:
             st.warning("Please fill in all fields.")
             st.stop()
 
-        # username validation using auth.py rules
+        # username validation using auth.py rules after importing
         valid_user, msg_user = validate_username(reg_user)
         if not valid_user:
             st.error(f"Username error: {msg_user}")
             st.stop()
 
-        # password validation using auth.py rules
+        # password validation using auth.py rules after import
         valid_pass, msg_pass = validate_password(reg_pass)
         if not valid_pass:
             st.error(f"Password error: {msg_pass}")

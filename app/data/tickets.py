@@ -113,19 +113,13 @@ def get_pending_tickets():
 #CSV loader
 
 def load_csv_to_table(conn, csv_path, table_name):
-    """
-    Load a CSV file into a database table using pandas.
-    Drops only 'id' column if present to avoid UNIQUE constraint errors.
-    Preserves 'ticket_id' so imported tickets keep their identifiers.
-    """
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV file not found: {csv_path}")
 
     df = pd.read_csv(csv_path)
 
-    # Drop primary key column if present
     if "id" in df.columns:
-        df = df.drop(columns=["id"])
+        df["id"] = df["id"].astype(int)
 
     df.to_sql(
         name=table_name,

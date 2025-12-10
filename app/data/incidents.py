@@ -6,7 +6,6 @@ from app.data.db import connect_database
 
 # CREATE function
 def add_incident(date, incident_type, severity, status, description, reported_by, created_at):
-    """Insert a new incident entry and return its ID."""
     conn = connect_database()
     cur = conn.cursor()
     cur.execute(
@@ -23,13 +22,15 @@ def add_incident(date, incident_type, severity, status, description, reported_by
     return new_id
 
 # READ
+
+#reading all
 def get_incidents():
     """Return all cyber incidents as a DataFrame."""
     conn = connect_database()
     df = pd.read_sql_query("SELECT * FROM cyber_incidents ORDER BY id DESC", conn)
     conn.close()
     return df
-
+#reading one with id
 def get_incident_by_id(incident_id):
     """Return a single incident by ID as a DataFrame."""
     conn = connect_database()
@@ -42,11 +43,14 @@ def get_incident_by_id(incident_id):
     return df
 
 # UPDATE
-def change_incident_status(incident_id, status):
-    """Update the status of a specific incident."""
+def change_incident_status(incident_id, severity, status, description):
+    """Update severity, status, and description of a specific incident."""
     conn = connect_database()
     cur = conn.cursor()
-    cur.execute("UPDATE cyber_incidents SET status = ? WHERE id = ?", (status, incident_id))
+    cur.execute(
+        "UPDATE cyber_incidents SET severity = ?, status = ?, description = ? WHERE id = ?",
+        (severity, status, description, incident_id)
+    )
     conn.commit()
     updated_rows = cur.rowcount
     conn.close()
@@ -118,21 +122,18 @@ def get_firewall_incidents():
 def load_csv_to_table(conn, csv_path, table_name):
     """
     Load a CSV file into a database table using pandas.
-    Drops 'id' or 'ticket_id' column if present to avoid UNIQUE constraint errors.
+    Keeps 'id' column from CSV so IDs match exactly (e.g., 1 to 1000).
     """
-    import os
-    import pandas as pd
-
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV file not found: {csv_path}")
 
     df = pd.read_csv(csv_path)
 
-    # Drop primary key columns if present
-    for col in ["id", "ticket_id"]:
-        if col in df.columns:
-            df = df.drop(columns=[col])
+    # Ensure 'id' is integer type
+    if "id" in df.columns:
+        df["id"] = df["id"].astype(int)
 
+    # Insert rows including the CSV's IDs
     df.to_sql(
         name=table_name,
         con=conn,

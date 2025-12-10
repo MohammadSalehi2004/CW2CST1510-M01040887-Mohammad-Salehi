@@ -1,122 +1,116 @@
 import pandas as pd
-from pathlib import Path
-from app.data.db import connect_database
 import os
+from app.data.db import connect_database
 
 # CRUD FUNCTIONS
 
-#creat function
-
-def create_dataset(dataset_name, category, source, last_updated,
-                   record_count, file_size_mb):
+# CREATE function
+def create_dataset(dataset_name, category, source, last_updated, record_count, file_size_mb, created_at):
     conn = connect_database()
     cur = conn.cursor()
-    cur.execute("""
+    cur.execute(
+        """
         INSERT INTO datasets_metadata
-        (dataset_name, category, source, last_updated, record_count, file_size_mb)
-        VALUES (?, ?, ?, ?, ?, ?)
-    """, (dataset_name, category, source, last_updated, record_count, file_size_mb))
+        (dataset_name, category, source, last_updated, record_count, file_size_mb, created_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+        """,
+        (dataset_name, category, source, last_updated, record_count, file_size_mb, created_at)
+    )
     conn.commit()
     new_id = cur.lastrowid
     conn.close()
     return new_id
 
-#read function
+# READ
 
+# reading one with id
 def get_dataset(dataset_id):
-    conn = connect_database()
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM datasets_metadata WHERE id = ?", (dataset_id,))
-    row = cur.fetchone()
-    conn.close()
-    return row
-
-
-def list_datasets(limit=500):
+    """Return a single dataset by ID as a DataFrame."""
     conn = connect_database()
     df = pd.read_sql_query(
-        f"SELECT * FROM datasets_metadata ORDER BY last_updated DESC LIMIT {limit}",
-        conn
+        "SELECT * FROM datasets_metadata WHERE id = ?",
+        conn,
+        params=(dataset_id,)
     )
     conn.close()
-    return df.to_dict(orient="records")
+    return df
 
-#update function
+# reading all
+def list_datasets():
+    """Return all datasets as a DataFrame."""
+    conn = connect_database()
+    df = pd.read_sql_query("SELECT * FROM datasets_metadata ORDER BY id DESC", conn)
+    conn.close()
+    return df
 
-def update_dataset(dataset_id, **fields):
-    if not fields:
-        return False
-
+# UPDATE
+def update_dataset(dataset_id, dataset_name, category, source, last_updated, record_count, file_size_mb):
+    """Update fields for a dataset by ID."""
     conn = connect_database()
     cur = conn.cursor()
-
-    updates = ", ".join(f"{k}=?" for k in fields.keys())
-    values = list(fields.values()) + [dataset_id]
-
-    cur.execute(f"UPDATE datasets_metadata SET {updates} WHERE id = ?", values)
+    cur.execute(
+        """
+        UPDATE datasets_metadata
+        SET dataset_name = ?, category = ?, source = ?, last_updated = ?, record_count = ?, file_size_mb = ?
+        WHERE id = ?
+        """,
+        (dataset_name, category, source, last_updated, record_count, file_size_mb, dataset_id)
+    )
     conn.commit()
-    rows = cur.rowcount
+    updated_rows = cur.rowcount
     conn.close()
-    return rows > 0
+    return updated_rows
 
-#delete function
-
+# DELETE
 def delete_dataset(dataset_id):
+    """Delete a dataset by ID."""
     conn = connect_database()
     cur = conn.cursor()
     cur.execute("DELETE FROM datasets_metadata WHERE id = ?", (dataset_id,))
     conn.commit()
-    deleted = cur.rowcount
+    deleted_rows = cur.rowcount
     conn.close()
-    return deleted
+    return deleted_rows
 
-
-#sql queries
-
+# SQL queries
 def large_datasets(min_size=100):
-    """WHERE, ORDER BY"""
+    """Return datasets larger than min_size MB."""
     conn = connect_database()
-    df = pd.read_sql_query("""
-        SELECT *
-        FROM datasets_metadata
-        WHERE file_size_mb >= ?
-        ORDER BY file_size_mb DESC
-    """, conn, params=(min_size,))
+    df = pd.read_sql_query(
+        "SELECT * FROM datasets_metadata WHERE file_size_mb >= ? ORDER BY file_size_mb DESC",
+        conn,
+        params=(min_size,)
+    )
     conn.close()
     return df
-
 
 def outdated_datasets(threshold_date):
-    """WHERE date < some threshold"""
+    """Return datasets older than threshold_date."""
     conn = connect_database()
-    df = pd.read_sql_query("""
-        SELECT *
-        FROM datasets_metadata
-        WHERE last_updated < ?
-        ORDER BY last_updated ASC
-    """, conn, params=(threshold_date,))
+    df = pd.read_sql_query(
+        "SELECT * FROM datasets_metadata WHERE last_updated < ? ORDER BY last_updated ASC",
+        conn,
+        params=(threshold_date,)
+    )
     conn.close()
     return df
 
-#loading csv file function
+# loading the dataset csv
 def load_csv_to_table(conn, csv_path, table_name):
     """
     Load a CSV file into a database table using pandas.
-    Drops 'id' or 'ticket_id' column if present to avoid UNIQUE constraint errors.
+    Keeps 'id' column from CSV so IDs match exactly.
     """
-    import os
-    import pandas as pd
-
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV file not found: {csv_path}")
 
     df = pd.read_csv(csv_path)
 
-    # Drop primary key columns if present
-    for col in ["id", "ticket_id"]:
-        if col in df.columns:
-            df = df.drop(columns=[col])
+    # Ensure 'id' is integer type
+    if "id" in df.columns:
+        df["id"] = df["id"].astype(int)
 
+    # Insert rows including the CSV's IDs
     df.to_sql(
         name=table_name,
         con=conn,

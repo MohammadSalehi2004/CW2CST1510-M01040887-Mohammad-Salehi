@@ -12,7 +12,7 @@ from openai import OpenAI
 #setting up page information
 st.set_page_config(page_title="Data Dashboard", layout="wide")
 
-# variable for key
+# palce for key
 OPENAI_API_KEY = "key place"
 client = OpenAI(api_key=OPENAI_API_KEY)
 
@@ -111,7 +111,6 @@ with tab1:
         selected_id = st.selectbox("Choose ID", df["id"].tolist())
         row = df[df["id"] == selected_id].iloc[0]
 
-        #making update columns and delete columns
         ucol, dcol = st.columns(2)
 
         with ucol:
@@ -170,6 +169,7 @@ with tab1:
 with tab2:
     st.subheader("Dataset Analytics")
 
+    #button for category bar chart
     if st.button("Show Category Bar Chart"):
         if not df.empty:
             import altair as alt
@@ -183,6 +183,7 @@ with tab2:
             )
             st.altair_chart(bar, use_container_width=True)
 
+    #button for source piechart
     if st.button("Show Source Pie Chart"):
         if not df.empty:
             import altair as alt
@@ -195,7 +196,7 @@ with tab2:
                 tooltip=["source", alt.Tooltip("percent", format=".1f")]
             )
             st.altair_chart(pie, use_container_width=True)
-
+    #button for dataset over time linechart
     if st.button("Show Datasets Over Time"):
         if not df.empty and "created_at" in df.columns:
             df_chart = df.copy()
@@ -217,7 +218,7 @@ with tab3:
         st.markdown("##  Data Operations AI Assistant")
 
     with top_right:
-        if st.button("Clear chat"):
+        if st.button("🗑 Clear chat"):
             st.session_state.data_chat = [
                 {"role": "system", "content": "You are a data analytics expert."}
             ]

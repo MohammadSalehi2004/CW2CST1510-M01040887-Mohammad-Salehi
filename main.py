@@ -1,5 +1,6 @@
 from pathlib import Path
 import pandas as pd
+from datetime import datetime
 
 # Database connection + schema
 from app.data.db import connect_database
@@ -62,7 +63,7 @@ def main():
     create_all_tables(conn)
     conn.close()
 
-    # 2. Migrate Week 7 users (FIXED: pass connection)
+    # 2. Migrate Week 7 users
     conn = connect_database()
     migrate_users_from_file(conn, Path("DATA/users.txt"))
     conn.close()
@@ -98,7 +99,7 @@ def main():
         "Open",
         "Suspicious email detected",
         "alice",
-        "2024-11-05 10:00"
+        datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # created_at
     )
     print(f"Created incident #{incident_id}")
 
@@ -118,18 +119,24 @@ def setup_database_complete():
     create_all_tables(conn)
     print("[1/4] Tables created")
 
-    # Step 2: Load Week 7 users (FIXED: pass connection)
+    # Step 2: Load Week 7 users
     migrate_users_from_file(conn, Path("DATA/users.txt"))
     print("[2/4] Week 7 users loaded")
 
-    # Step 3: Load CSV files
-    print("[3/4] Loading CSV files...")
+    # Step 3: Reset DB from CSVs
+    print("[3/4] Resetting DB from CSVs...")
+
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM datasets_metadata")
+    cursor.execute("DELETE FROM it_tickets")
+    cursor.execute("DELETE FROM cyber_incidents")
+    conn.commit()
+
     load_datasets_csv(conn, "DATA/datasets_metadata.csv", "datasets_metadata")
     load_tickets_csv(conn, "DATA/it_tickets.csv", "it_tickets")
     load_incidents_csv(conn, "DATA/cyber_incidents.csv", "cyber_incidents")
 
     # Step 4: Verify table counts
-    cursor = conn.cursor()
     tables = ["users", "cyber_incidents", "datasets_metadata", "it_tickets"]
 
     print("\nDatabase Summary:")
@@ -147,7 +154,7 @@ def setup_database_complete():
 
 def run_comprehensive_tests():
     print("\n" + "=" * 60)
-    print("🧪 RUNNING COMPREHENSIVE TESTS")
+    print("RUNNING COMPREHENSIVE TESTS")
     print("=" * 60)
 
     conn = connect_database()
@@ -170,11 +177,11 @@ def run_comprehensive_tests():
         "Open",
         "This is a test incident",
         "test_user",
-        "2024-11-05 13:20"
+        datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # created_at
     )
     print(f"  Create: Incident #{new_id}")
 
-    change_incident_status(new_id, "Resolved")
+    change_incident_status(new_id, "Low", "Resolved", "Updated after investigation")
     print("  Update: Status updated")
 
     remove_incident(new_id)
@@ -190,7 +197,7 @@ def run_comprehensive_tests():
 
     conn.close()
     print("\n" + "=" * 60)
-    print("✅ ALL TESTS PASSED!")
+    print("ALL TESTS PASSED")
     print("=" * 60)
 
 

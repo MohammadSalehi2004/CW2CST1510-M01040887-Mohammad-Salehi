@@ -12,7 +12,7 @@ from openai import OpenAI
 #setting up page information
 st.set_page_config(page_title="Cybersecurity Dashboard", layout="wide")
 
-# palce for key
+# variable for key
 OPENAI_API_KEY = "key place" #either mine or the bob one
 client = OpenAI(api_key=OPENAI_API_KEY)
 
@@ -109,6 +109,7 @@ with tab1:
         selected_id = st.selectbox("Choose ID", df["id"].tolist())
         row = df[df["id"] == selected_id].iloc[0]
 
+        #making update columns and delete columns
         ucol, dcol = st.columns(2)
 
         with ucol:
@@ -174,7 +175,7 @@ with tab2:
             )
             st.altair_chart(pie, use_container_width=True)
 
-    # Button for line chart (incidents over time)
+    # Button for line chart
     if st.button("Show Incidents Over Time"):
         if not df.empty and "date" in df.columns:
             df_chart = df.copy()
@@ -191,14 +192,15 @@ with tab2:
 #Tab for AI
 with tab3:
 
-    # chat history + clear button (Week 10 style)
+    #making left and right sides 
     top_left, top_right = st.columns([4, 1])
 
     with top_left:
         st.markdown("##  Cybersecurity AI Assistant")
 
+    #adding clear chat button so its easier for user to use in a clean way
     with top_right:
-        if st.button("🗑 Clear chat"):
+        if st.button("Clear chat"):
             st.session_state.cyber_chat = [
                 {"role": "system", "content": "You are a cybersecurity expert assistant."}
             ]

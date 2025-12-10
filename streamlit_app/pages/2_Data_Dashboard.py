@@ -12,7 +12,7 @@ from openai import OpenAI
 #setting up page information
 st.set_page_config(page_title="Data Dashboard", layout="wide")
 
-# palce for key
+# variable for key
 OPENAI_API_KEY = "key place"
 client = OpenAI(api_key=OPENAI_API_KEY)
 
@@ -111,6 +111,7 @@ with tab1:
         selected_id = st.selectbox("Choose ID", df["id"].tolist())
         row = df[df["id"] == selected_id].iloc[0]
 
+        #making update columns and delete columns
         ucol, dcol = st.columns(2)
 
         with ucol:
@@ -216,7 +217,7 @@ with tab3:
         st.markdown("##  Data Operations AI Assistant")
 
     with top_right:
-        if st.button("🗑 Clear chat"):
+        if st.button("Clear chat"):
             st.session_state.data_chat = [
                 {"role": "system", "content": "You are a data analytics expert."}
             ]
@@ -227,9 +228,9 @@ with tab3:
         **Powered by OpenAI**
 
         Ask questions such as:
-        - Summarize dataset trends
-        - Which datasets are outdated?
-        - Recommend data management strategies
+        - What is data analytics?
+        - What is SQL?
+        - Recommend softwares for analyzing data
         """
     )
 

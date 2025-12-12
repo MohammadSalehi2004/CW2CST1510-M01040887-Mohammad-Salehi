@@ -56,7 +56,7 @@ col3.metric("Avg File Size (MB)", round(df["file_size_mb"].mean(), 2) if "file_s
 st.divider()
 
 #Making tabs
-tab1, tab2, tab3 = st.tabs(["📋 Datasets", "📊 Analytics", "🤖 AI Assistant"])
+tab1, tab2, tab3 = st.tabs(["💻 Datasets", "📊 Analytics", "🤖 AI Assistant"])
 
 #Tab for showing CRUD functions for datasets
 with tab1:
@@ -111,6 +111,7 @@ with tab1:
         selected_id = st.selectbox("Choose ID", df["id"].tolist())
         row = df[df["id"] == selected_id].iloc[0]
 
+        #making 2 columns one for delete and one for update
         ucol, dcol = st.columns(2)
 
         with ucol:
@@ -212,13 +213,16 @@ with tab2:
 #Tab for AI
 with tab3:
 
+    #making 2 sides
     top_left, top_right = st.columns([4, 1])
 
+    #one for showing info
     with top_left:
         st.markdown("##  Data Operations AI Assistant")
 
+    #clear option
     with top_right:
-        if st.button("🗑 Clear chat"):
+        if st.button("Clear chat"):
             st.session_state.data_chat = [
                 {"role": "system", "content": "You are a data analytics expert."}
             ]

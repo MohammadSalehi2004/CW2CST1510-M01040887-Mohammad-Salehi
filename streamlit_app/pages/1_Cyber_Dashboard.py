@@ -12,8 +12,8 @@ from openai import OpenAI
 #setting up page information
 st.set_page_config(page_title="Cybersecurity Dashboard", layout="wide")
 
-# palce for key
-OPENAI_API_KEY = "key place" #either mine or the bob one
+# place for key with openai api key variable for it
+OPENAI_API_KEY = "key place"
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 #checking for users to login or register
@@ -57,7 +57,7 @@ col3.metric("Open", int((df["status"] == "open").sum()) if "status" in df.column
 st.divider()
 
 #Making tabs
-tab1, tab2, tab3 = st.tabs(["📋 Incidents", "📊 Analytics", "🤖 AI Assistant"])
+tab1, tab2, tab3 = st.tabs(["💻 Incidents", "📊 Analytics", "🤖 AI Assistant"])
 
 #Tab for showing CRUD functions for incidents
 with tab1:
@@ -109,6 +109,7 @@ with tab1:
         selected_id = st.selectbox("Choose ID", df["id"].tolist())
         row = df[df["id"] == selected_id].iloc[0]
 
+        #making 2 columns for update and delete
         ucol, dcol = st.columns(2)
 
         with ucol:
@@ -191,14 +192,14 @@ with tab2:
 #Tab for AI
 with tab3:
 
-    # chat history + clear button (Week 10 style)
+    # ai chat part with a clear chat nutton
     top_left, top_right = st.columns([4, 1])
 
     with top_left:
         st.markdown("##  Cybersecurity AI Assistant")
 
     with top_right:
-        if st.button("🗑 Clear chat"):
+        if st.button("Clear chat"):
             st.session_state.cyber_chat = [
                 {"role": "system", "content": "You are a cybersecurity expert assistant."}
             ]
@@ -244,6 +245,7 @@ with tab3:
 
 st.divider()
 
+#logout option
 if st.button("Log out"):
     st.session_state.logged_in = False
     st.session_state.username = ""

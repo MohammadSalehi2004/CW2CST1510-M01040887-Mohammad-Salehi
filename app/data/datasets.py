@@ -106,7 +106,7 @@ def load_csv_to_table(conn, csv_path, table_name):
 
     df = pd.read_csv(csv_path)
 
-    # Ensure 'id' is integer type
+    # typecasting id to int to avoid issues
     if "id" in df.columns:
         df["id"] = df["id"].astype(int)
 

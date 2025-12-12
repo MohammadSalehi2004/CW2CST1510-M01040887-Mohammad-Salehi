@@ -1,19 +1,17 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-from app.data.tickets import (
-    add_ticket,
-    get_ticket_by_id,
-    change_ticket_status,
-    remove_ticket
-)
+from app.data.tickets import add_ticket, change_ticket_status, remove_ticket
 from app.data.db import connect_database
 from openai import OpenAI
 
 #page info
 st.set_page_config(page_title="IT Operations Dashboard", layout="wide")
 
-#login check
+#api key variable
+OPENAI_API_KEY = "key place"
+client = OpenAI(api_key=OPENAI_API_KEY)
+
 if not st.session_state.get("logged_in"):
     st.error("Please log in to view this page.")
     st.stop()
@@ -21,82 +19,93 @@ if st.session_state.role not in ["it_ops", "admin"]:
     st.warning("You do not have permission to access this dashboard.")
     st.stop()
 
-# getting data frame with read function
-def get_all_tickets():
+
+#welcome message
+st.title("IT Operations Dashboard")
+st.success(f"Welcome {st.session_state.username} ({st.session_state.role})")
+
+#loading table and acsending for order
+def load_df():
     conn = connect_database()
     df = pd.read_sql_query("SELECT * FROM it_tickets ORDER BY id ASC", conn)
     conn.close()
     return df
 
-# page info
-st.title("IT Operations Dashboard")
-st.success(f"Welcome {st.session_state.username} ({st.session_state.role})")
-
-# loading data
 try:
-    df = get_all_tickets()
+    df = load_df()
 except Exception as e:
-    st.error(f"Failed to get tickets: {e}")
+    st.error(f"Failed to load tickets: {e}")
     df = pd.DataFrame()
 
-#fixing some issues
 if not df.empty:
     if "created_at" in df.columns:
-        df["created_at"] = pd.to_datetime(df["created_at"], errors="ignore")
+        df["created_at"] = pd.to_datetime(df["created_at"], errors="coerce")
+    if "resolved_date" in df.columns:
+        df["resolved_date"] = pd.to_datetime(df["resolved_date"], errors="coerce")
     if "id" in df.columns:
         df = df.sort_values("id", ascending=True)
 
-# metric functions
+#metrics part
 col1, col2, col3 = st.columns(3)
-col1.metric("Total tickets", len(df))
+col1.metric("Total Tickets", len(df))
 col2.metric("Open", int((df["status"].str.lower() == "open").sum()) if "status" in df.columns else 0)
 col3.metric("Closed", int((df["status"].str.lower() == "closed").sum()) if "status" in df.columns else 0)
 
 st.divider()
 
-# tabs to match Cyber/Data layout
+
+#making 3 tabs for CRUD handling, charts and AI part
 tab1, tab2, tab3 = st.tabs(["📋 Tickets", "📊 Analytics", "🤖 AI Assistant"])
 
-#Tab 1: CRUD
 with tab1:
     left, right = st.columns([2, 1])
 
     with left:
         st.subheader("All Tickets")
-        table_placeholder = st.empty()
-        table_placeholder.dataframe(df.head(1000), use_container_width=True)
+        if not df.empty:
+            show_cols = ["id","ticket_id","priority","status","category","subject",
+                         "description","resolved_date","assigned_to","created_at"]
+            existing_cols = [c for c in show_cols if c in df.columns]
+            df_display = df.copy()
+            if "resolved_date" in df_display.columns:
+                df_display["resolved_date"] = pd.to_datetime(df_display["resolved_date"], errors="coerce")
+                df_display["resolved_date"] = df_display["resolved_date"].dt.strftime("%Y-%m-%d").fillna("None")
+            if "created_at" in df_display.columns:
+                df_display["created_at"] = pd.to_datetime(df_display["created_at"], errors="coerce")
+                df_display["created_at"] = df_display["created_at"].dt.strftime("%Y-%m-%d %H:%M:%S").fillna("None")
+            st.dataframe(df_display[existing_cols], use_container_width=True)
+        else:
+            st.info("No tickets found.")
 
     with right:
         st.subheader("Create Ticket")
-        with st.form("create_ticket"):
+        with st.form("create_ticket_form"):
             ticket_id = st.text_input("Ticket ID")
-            priority = st.selectbox("Priority", ["Low", "Medium", "High", "Critical"])
-            status = st.selectbox("Status", ["Open", "In Progress", "Resolved", "Closed"])
+            priority = st.selectbox("Priority", ["Low","Medium","High","Critical"])
+            status = st.selectbox("Status", ["Open","In Progress","Resolved","Closed"])
             category = st.text_input("Category")
             subject = st.text_input("Subject")
             description = st.text_area("Description")
-            created_date = st.date_input("Created Date")
-            resolved_date = st.date_input("Resolved Date", value=None)
+            try:
+                resolved_date = st.date_input("Resolved Date (optional)", value=None, key="create_resolved_date")
+            except Exception:
+                resolved_date = None
             assigned_to = st.text_input("Assigned To")
-            created_at = datetime.now().strftime("%Y-%m-%d")
+            submitted = st.form_submit_button("Create")
 
-            if st.form_submit_button("Create"):
+            if submitted:
                 try:
-                    add_ticket(
-                        ticket_id=str(ticket_id),
-                        priority=priority,
-                        status=status,
-                        category=category,
-                        subject=subject,
-                        description=description,
-                        created_date=str(created_date),
-                        resolved_date=str(resolved_date) if resolved_date else None,
-                        assigned_to=assigned_to,
-                        created_at=created_at
-                    )
-                    st.success("Ticket created.")
-                    df = get_all_tickets()
-                    table_placeholder.dataframe(df.head(1000), use_container_width=True)
+                    created_at_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    resolved_str = None
+                    if resolved_date is not None:
+                        try:
+                            resolved_str = resolved_date.strftime("%Y-%m-%d")
+                        except Exception:
+                            resolved_str = None
+                    add_ticket(ticket_id, priority, status, category, subject, description,
+                               resolved_str, assigned_to, created_at_str)
+                    st.success("Ticket created successfully!")
+                    st.rerun()
                 except Exception as e:
                     st.error(f"Failed to create ticket: {e}")
 
@@ -104,77 +113,122 @@ with tab1:
 
     if not df.empty and "id" in df.columns:
         st.subheader("Update or Delete Ticket")
-        selected_id = st.selectbox("Select Ticket ID", df["id"])
+        selected_id = st.selectbox("Choose ID", df["id"].tolist())
         row = df[df["id"] == selected_id].iloc[0]
 
+        #two columns in update and delete section
         ucol, dcol = st.columns(2)
+
+        #update
         with ucol:
-            with st.form("update_ticket"):
-                status_options = ["Open", "In Progress", "Resolved", "Closed"]
+            with st.form("update_ticket_form"):
+                status_opts = ["Open", "In Progress", "Resolved", "Closed"]
+                current_status = row["status"] if "status" in row and pd.notna(row["status"]) else "Open"
                 new_status = st.selectbox(
                     "Status",
-                    status_options,
-                    index=status_options.index(row["status"]) if row["status"] in status_options else 0
+                    status_opts,
+                    index=status_opts.index(current_status) if current_status in status_opts else 0
                 )
+
+                current_resolved = None
+                try:
+                    if pd.notna(row.get("resolved_date")):
+                        current_resolved = pd.to_datetime(row.get("resolved_date")).date()
+                except Exception:
+                    current_resolved = None
+
+                new_resolved = st.date_input("Resolved Date (optional)", value=current_resolved, key=f"update_resolved_{selected_id}")
+
                 if st.form_submit_button("Update"):
                     try:
-                        change_ticket_status(int(selected_id), new_status)
-                        st.success("Ticket updated.")
-                        df = get_all_tickets()
-                        table_placeholder.dataframe(df.head(1000), use_container_width=True)
-                    except Exception as e:
-                        st.error(f"Failed to update ticket: {e}")
+                        resolved_val = None
+                        if new_resolved is not None:
+                            try:
+                                resolved_val = new_resolved.strftime("%Y-%m-%d")
+                            except Exception:
+                                resolved_val = None
 
+                        change_ticket_status(int(selected_id), new_status, resolved_date=resolved_val)
+                        st.success("Ticket updated successfully!")
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Update failed: {e}")
+        #delete
         with dcol:
-            if st.checkbox("Confirm deletion"):
-                if st.button("Delete ticket", type="primary"):
+            if st.checkbox("Confirm delete this ticket"):
+                if st.button("DELETE", type="primary"):
                     try:
                         remove_ticket(int(selected_id))
-                        st.success("Ticket deleted.")
-                        df = get_all_tickets()
-                        table_placeholder.dataframe(df.head(1000), use_container_width=True)
+                        st.success("Ticket deleted!")
+                        st.rerun()
                     except Exception as e:
-                        st.error(f"Failed to delete ticket: {e}")
+                        st.error(f"Delete failed: {e}")
 
-#Tab 2: Analytics
+#chart tab for all 3 charts
 with tab2:
     st.subheader("Ticket Analytics")
 
-    # button for bar chart
-    if st.button("Show Tickets by Status"):
+    if st.button("Show Tickets by Status bar chart"):
         if not df.empty and "status" in df.columns:
-            st.bar_chart(df["status"].value_counts())
+            import altair as alt
+            status_df = df["status"].value_counts().reset_index()
+            status_df.columns = ["status", "count"]
 
-    # button for pie chart
-    if st.button("Show Tickets by Priority"):
+            bar = alt.Chart(status_df).mark_bar().encode(
+                x=alt.X("status", sort="-y"),
+                y="count",
+                color="status",
+                tooltip=["status", "count"]
+            )
+            st.altair_chart(bar, use_container_width=True)
+
+    if st.button("Show Tickets by Priority pie chart"):
         if not df.empty and "priority" in df.columns:
             import altair as alt
-            priority_counts = df["priority"].value_counts().reset_index()
-            priority_counts.columns = ["priority", "count"]
-            pie = alt.Chart(priority_counts).mark_arc().encode(
+            pri_df = df["priority"].value_counts().reset_index()
+            pri_df.columns = ["priority", "count"]
+            pri_df["percent"] = (pri_df["count"] / pri_df["count"].sum()) * 100
+
+            pie = alt.Chart(pri_df).mark_arc().encode(
                 theta="count",
                 color="priority",
-                tooltip=["priority", "count"]
+                tooltip=["priority", alt.Tooltip("percent", format=".1f")]
             )
             st.altair_chart(pie, use_container_width=True)
 
-    # button for line chart (simple like cyber dashboard)
-    if st.button("Show Tickets Over Time"):
+    if st.button("Show Tickets Over Time line chart"):
         if not df.empty and "created_at" in df.columns:
-            line_df = df.groupby(df["created_at"].dt.date).size().reset_index(name="tickets")
-            line_df.columns = ["date", "tickets"]
-            st.line_chart(line_df.set_index("date"))
+            df_chart = df.copy()
+            df_chart["created_at_dt"] = pd.to_datetime(df_chart["created_at"], errors="coerce")
+            df_valid = df_chart[df_chart["created_at_dt"].notna()]
+            if not df_valid.empty:
+                line_df = df_valid.groupby(df_valid["created_at_dt"].dt.date).size().reset_index(name="tickets")
+                line_df.columns = ["date", "tickets"]
+                st.line_chart(line_df.set_index("date"))
+            else:
+                st.info("No valid dates to plot.")
 
-#Tab 3: AI Assistant
+#AI tab section
 with tab3:
-    st.markdown("## IT Operations AI Assistant")
+    top_left, top_right = st.columns([4, 1])
+
+    with top_left:
+        st.markdown("## IT Operations AI Assistant")
+
+    with top_right:
+        if st.button("Clear chat"):
+            st.session_state.it_chat = [
+                {"role": "system", "content": "You are an IT operations expert assistant."}
+            ]
+            st.rerun()
+
     st.markdown(
         """
-        **Powered by OpenAI**
+        *Powered by OpenAI*
 
         Ask questions such as:
         - What is API?
-        - Which issues happen most often when dealing with API?
+        - Which IT issues happen most often?
         - What should IT focus on right now?
         """
     )
@@ -195,7 +249,6 @@ with tab3:
         with st.chat_message("user"):
             st.write(user_input)
 
-        client = OpenAI(api_key="key place")
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=st.session_state.it_chat
@@ -209,9 +262,8 @@ with tab3:
 
 st.divider()
 
-#logout option
 if st.button("Log out"):
     st.session_state.logged_in = False
     st.session_state.username = ""
     st.session_state.role = ""
-    st.rerun()
+    st.success("Logged out!")

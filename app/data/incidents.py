@@ -67,7 +67,7 @@ def remove_incident(incident_id):
     conn.close()
     return deleted_rows
 
-# SQL queries
+# SQL queries for practice
 def get_high_severity_incidents():
     """Return all incidents with severity 'high'."""
     conn = connect_database()
@@ -129,7 +129,7 @@ def load_csv_to_table(conn, csv_path, table_name):
 
     df = pd.read_csv(csv_path)
 
-    # Ensure 'id' is integer type
+    # Ensure 'id' is integer type to avoide issues
     if "id" in df.columns:
         df["id"] = df["id"].astype(int)
 

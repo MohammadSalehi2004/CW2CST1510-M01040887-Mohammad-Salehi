@@ -1,4 +1,4 @@
 pandas
-sqllite3
+sqlite3
 bcrypt
 python-dotenv

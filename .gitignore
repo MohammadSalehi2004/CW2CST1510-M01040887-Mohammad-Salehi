@@ -1,4 +1,5 @@
 # Python cache, Virtual enviroment, vs code, and logs
+#didnt really use .env but anyway
 __pycache__/
 *.pyc
 *.pyo

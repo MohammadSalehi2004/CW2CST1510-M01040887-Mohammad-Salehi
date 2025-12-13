@@ -25,7 +25,7 @@ if st.session_state.role not in ["data", "admin"]:
     st.stop()
 
 # page info and welcome
-st.title("Data Operations Dashboard")
+st.title("💻Data Operations Dashboard")
 st.success(f"Welcome {st.session_state.username} ({st.session_state.role})")
 
 #showing the table by using read fucntion from datasets.py
@@ -61,7 +61,7 @@ tab1, tab2, tab3 = st.tabs(["💻 Datasets", "📊 Analytics", "🤖 AI Assistan
 #Tab for showing CRUD functions for datasets
 with tab1:
 
-    #making 2 sides, left for showin the table and a right side for the first CRUD function in streamlit creat
+    #making 2 sides, left for showin the table and a right side for the first CRUD function in streamlit create is right side
     left, right = st.columns([2, 1])
 
     with left:
@@ -218,7 +218,7 @@ with tab3:
 
     #one for showing info
     with top_left:
-        st.markdown("##  Data Operations AI Assistant")
+        st.markdown("## 🤖 Data Operations AI Assistant")
 
     #clear option
     with top_right:

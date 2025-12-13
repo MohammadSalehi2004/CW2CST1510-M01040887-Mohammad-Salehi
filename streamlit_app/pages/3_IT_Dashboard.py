@@ -21,7 +21,7 @@ if st.session_state.role not in ["it_ops", "admin"]:
 
 
 #welcome message
-st.title("IT Operations Dashboard")
+st.title("⚙️IT Operations Dashboard")
 st.success(f"Welcome {st.session_state.username} ({st.session_state.role})")
 
 #loading table and acsending for order
@@ -55,9 +55,11 @@ st.divider()
 
 
 #making 3 tabs for CRUD handling, charts and AI part
-tab1, tab2, tab3 = st.tabs(["📋 Tickets", "📊 Analytics", "🤖 AI Assistant"])
+tab1, tab2, tab3 = st.tabs(["💻 Tickets", "📊 Analytics", "🤖 AI Assistant"])
 
 with tab1:
+
+    #left side for showing table and right side for creating tickets
     left, right = st.columns([2, 1])
 
     with left:
@@ -213,7 +215,7 @@ with tab3:
     top_left, top_right = st.columns([4, 1])
 
     with top_left:
-        st.markdown("## IT Operations AI Assistant")
+        st.markdown("## 🤖IT Operations AI Assistant")
 
     with top_right:
         if st.button("Clear chat"):

@@ -25,7 +25,7 @@ if st.session_state.role not in ["cyber", "admin"]:
     st.stop()
 
 # page info and welcome
-st.title("Cyber Operations Dashboard")
+st.title("🔐Cyber Operations Dashboard")
 st.success(f"Welcome {st.session_state.username} ({st.session_state.role})")
 
 #showing the table by using read fucntion from incidents.py
@@ -62,7 +62,7 @@ tab1, tab2, tab3 = st.tabs(["💻 Incidents", "📊 Analytics", "🤖 AI Assista
 #Tab for showing CRUD functions for incidents
 with tab1:
 
-    #making 2 sides, left for showin the table and a right side for the first CRUD function in streamlit creat
+    #making 2 sides, left for showin the table and a right side for the first CRUD function in streamlit
     left, right = st.columns([2, 1])
 
     with left:
@@ -175,7 +175,7 @@ with tab2:
             )
             st.altair_chart(pie, use_container_width=True)
 
-    # Button for line chart (incidents over time)
+    # Button for line chart incidents over time
     if st.button("Show Incidents Over Time"):
         if not df.empty and "date" in df.columns:
             df_chart = df.copy()
@@ -196,7 +196,7 @@ with tab3:
     top_left, top_right = st.columns([4, 1])
 
     with top_left:
-        st.markdown("##  Cybersecurity AI Assistant")
+        st.markdown("## 🤖 Cybersecurity AI Assistant")
 
     with top_right:
         if st.button("Clear chat"):

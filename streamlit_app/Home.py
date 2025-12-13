@@ -20,7 +20,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("Intelligence Platform – Home")
+st.title("🌐Intelligence Platform - Home")
 
 # checking if user logged in or not
 if "logged_in" not in st.session_state:

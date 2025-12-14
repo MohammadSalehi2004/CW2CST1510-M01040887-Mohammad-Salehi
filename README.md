@@ -31,6 +31,7 @@ This is a README file and an instruction on how to run the CW2 files from week 8
 - after that run main.py( in terminal enter " python main.py ") or get straight into streamlit, running main.py will reset the rows as csv files
 - after that run the homepage for the app which is Home.py (run it how you wish just make sure the streamlit run command ends with the file name and .py)
 - everything should be working if the steps are followed and user can register and select their role depending on how much access they wish for
+- for the week 11 files user must follow the same instructions, make sure the file is in the right place and then open the Home.py page
 ## Technical Implementation
 - At the end some small things were added to beautify using emojis and basic success messages that turn green, adding banners on top of home page and dahboards was an option too but I prefer this look.
 

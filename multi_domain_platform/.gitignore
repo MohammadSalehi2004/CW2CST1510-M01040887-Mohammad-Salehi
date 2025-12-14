@@ -11,3 +11,4 @@ __pycache__/
 *.log
 .env
 .streamlit/secrets.toml
+#secrets.toml is ignored since the lab file and practices use this method to avoid issues with git and api keys

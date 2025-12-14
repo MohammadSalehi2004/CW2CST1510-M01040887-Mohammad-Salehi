@@ -34,4 +34,6 @@ This is a README file and an instruction on how to run the CW2 files from week 8
 - for the week 11 files user must follow the same instructions, make sure the file is in the right place and then open the Home.py page
 ## Technical Implementation
 - At the end some small things were added to beautify using emojis and basic success messages that turn green, adding banners on top of home page and dahboards was an option too but I prefer this look.
+- inside week11 multi_domain_platform, secrets file is ignored since thats the place for API key, i dont have my API key there 
+but its still good practice to ignore it.
 

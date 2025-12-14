@@ -1,0 +1,13 @@
+# Python cache, Virtual enviroment, vs code, and logs
+#didnt really use some of these as i wanted to but anyway
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env/
+.venv/
+.vscode/
+.idea/
+*.log
+.env
+.streamlit/secrets.toml

@@ -1,0 +1,1 @@
+#The code would be the same with the column names being different, same with graph
